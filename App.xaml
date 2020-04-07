@@ -1,7 +1,7 @@
-﻿<Application x:Class="AppleMusicRssPlayer.App"
+﻿<Application x:Class="AppleMusicPlayer.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:AppleMusicRssPlayer"
+             xmlns:local="clr-namespace:AppleMusicPlayer"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          
