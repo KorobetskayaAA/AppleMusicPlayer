@@ -5,8 +5,56 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AppleMusicPlayer"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Apple Top Songs Player" Height="350" Width="600">
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.Open" Executed="OpenAudioFile_Execute"/>
+        <CommandBinding Command="ApplicationCommands.Save"/>
+        <CommandBinding Command="ApplicationCommands.Close" Executed="Close_Execute"/>
 
-    </Grid>
+        <CommandBinding Command="MediaCommands.Play" Executed="Play_Execute" CanExecute="Play_CanExecute"/>
+        <CommandBinding Command="MediaCommands.Pause" Executed="Pause_Execute" CanExecute="Pause_CanExecute"/>
+        <CommandBinding Command="MediaCommands.Stop" Executed="Stop_Execute" CanExecute="Stop_CanExecute"/>
+    </Window.CommandBindings>
+
+
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Ф_айл">
+                <MenuItem Header="_Открыть" Command="Open" />
+                <MenuItem Header="_Сохранить" Command="Save" />
+                <Separator />
+                <MenuItem Header="Выход" Command="Close" />
+            </MenuItem>
+            <MenuItem Header="Воспроизведение">
+                <MenuItem Header="Играть" Command="MediaCommands.Play" />
+                <MenuItem Header="Пауза" Command="MediaCommands.Pause" />
+                <MenuItem Header="Остановить" Command="MediaCommands.Stop" />
+            </MenuItem>
+        </Menu>
+        <WrapPanel Grid.Row="1" Margin="7" DockPanel.Dock="Bottom" Height="Auto">
+            <Grid Margin="3" Width="220">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" MinWidth="50pt"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Slider Grid.Row="0" Grid.ColumnSpan="4"
+                        x:Name="TimingProgress" 
+                        Minimum="0" Maximum="1" Value="0" 
+                        ValueChanged="TimingProgress_ValueChanged"/>
+                <TextBlock Grid.Row="1" Grid.Column="0"
+                    x:Name="TimingText" Text="0:00/0:00" VerticalAlignment="Center"/>
+                <Button Grid.Row="1" Grid.Column="1" Command="MediaCommands.Play">Играть</Button>
+                <Button Grid.Row="1" Grid.Column="2" Command="MediaCommands.Pause">Пауза</Button>
+                <Button Grid.Row="1" Grid.Column="3" Command="MediaCommands.Stop">Стоп</Button>
+            </Grid>
+        </WrapPanel>
+        <ListView Grid.Row="0" DockPanel.Dock="Right"></ListView>
+        <Grid></Grid>
+    </DockPanel>
 </Window>
