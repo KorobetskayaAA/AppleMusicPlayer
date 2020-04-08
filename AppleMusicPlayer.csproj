@@ -11,9 +11,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="appletop25.xml">
+    <Content Include="Model\appletop25.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ViewModel\" />
   </ItemGroup>
 
 </Project>
