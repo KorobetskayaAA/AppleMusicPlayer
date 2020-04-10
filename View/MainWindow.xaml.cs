@@ -9,109 +9,80 @@ using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Windows.Threading;
+using System.Windows.Media;
 
 namespace AppleMusicPlayer
 {
-    enum PlayingState { Playing = 1, Paused = 2, Stopped = 0 }
 
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
-        MediaPlayer mediaPlayer;
         IDialogService dialogService;
-        DispatcherTimer timer;
-        PlayingState playingState = PlayingState.Stopped;
+        IAudioPlayerController audioPlayerController;
 
         public MainWindow()
         {
-            InitializeComponent();
+            audioPlayerController = new DefaultAudioPlayerController();
+            audioPlayerController.MediaFailed += MediaPlayer_MediaFailed;
+            audioPlayerController.MediaOpened += MediaPlayer_MediaOpened;
+            audioPlayerController.Tick += TimingProgress_Tick;
+
             dialogService = new DefaultDialogService();
 
-            mediaPlayer = new MediaPlayer();
-            mediaPlayer.MediaOpened += MediaPlayer_MediaOpened;
-            mediaPlayer.MediaFailed += MediaPlayer_MediaFailed; ;
-            mediaPlayer.MediaEnded += MediaPlayer_MediaEnded;
-
-            timer = new DispatcherTimer();
-            timer.Interval = TimeSpan.FromSeconds(1);
-            timer.Tick += Timer_Tick;
-        }
-
-        private void MediaPlayer_MediaEnded(object sender, EventArgs e)
-        {
-            timer.Stop();
-            Timer_Tick(null, null);
-            playingState = PlayingState.Stopped;
+            InitializeComponent();
         }
 
         private void MediaPlayer_MediaFailed(object sender, ExceptionEventArgs e)
         {
             dialogService.ShowMessage("Ошибка! Не удалось открыть файл!");
-            playingState = PlayingState.Stopped;
-            timer.Stop();
-            Timer_Tick(null, null);
         }
 
         private void MediaPlayer_MediaOpened(object sender, EventArgs e)
         {
-             Play_Execute(null, null);
-             TimingProgress.Maximum = mediaPlayer.NaturalDuration.TimeSpan.TotalSeconds;
+            TimingProgress.Maximum = audioPlayerController.Duration.TotalSeconds;
         }
 
         private void OpenAudioFile_Execute(object target, ExecutedRoutedEventArgs e)
         {
             if (dialogService.OpenFileDialog())
             {
-                mediaPlayer.Open(new Uri(dialogService.FileName));
+                audioPlayerController.Open(dialogService.FileName);
             }
         }
 
         void Play_Execute(object target, ExecutedRoutedEventArgs e)
         {
-            mediaPlayer.Play();
-            timer.Start();
-            Timer_Tick(null, null);
-            playingState = PlayingState.Playing;
+            audioPlayerController.Play();
         }
 
         void Play_CanExecute(object sender, CanExecuteRoutedEventArgs e)
         {
-            e.CanExecute = (mediaPlayer != null) && (mediaPlayer.Source != null)
-                && playingState != PlayingState.Playing;
+            e.CanExecute = audioPlayerController.CanPlay;
         }
 
         void Pause_Execute(object target, ExecutedRoutedEventArgs e)
         {
-            mediaPlayer.Pause();
-            timer.Stop();
-            playingState = PlayingState.Paused;
+            audioPlayerController.Pause();
         }
 
         void Pause_CanExecute(object sender, CanExecuteRoutedEventArgs e)
         {
-            e.CanExecute = (mediaPlayer != null) && (mediaPlayer.Source != null)
-                && playingState == PlayingState.Playing;
+            e.CanExecute = audioPlayerController.CanPause;
         }
 
         void Stop_Execute(object target, ExecutedRoutedEventArgs e)
         {
-            mediaPlayer.Stop();
-            timer.Stop();
-            Timer_Tick(null, null);
-            playingState = PlayingState.Stopped;
+            audioPlayerController.Stop();
         }
 
         void Stop_CanExecute(object sender, CanExecuteRoutedEventArgs e)
         {
-            e.CanExecute = (mediaPlayer != null) && (mediaPlayer.Source != null)
-                && playingState != PlayingState.Stopped;
+            e.CanExecute = audioPlayerController.CanStop;
         }
 
         void Close_Execute(object target, ExecutedRoutedEventArgs e)
@@ -119,24 +90,18 @@ namespace AppleMusicPlayer
             Close();
         }
 
-        void Timer_Tick(object sender, EventArgs e)
+        void TimingProgress_Tick(object sender, EventArgs e)
         {
-            TimingText.Text = (mediaPlayer.Source != null) ? string.Format("{0}/{1}",
-                        mediaPlayer.Position.ToString(@"mm\:ss"),
-                        mediaPlayer.NaturalDuration.TimeSpan.ToString(@"mm\:ss"))
-                : TimingText.Text = "00:00";
-            TimingProgress.Value = mediaPlayer.Position.TotalSeconds;
+            TimingText.Text = audioPlayerController.TimingString;
+            TimingProgress.Value = audioPlayerController.Position.TotalSeconds;
         }
 
         private void TimingProgress_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             TimeSpan ts = TimeSpan.FromSeconds(e.NewValue);
-            if (mediaPlayer.Position != ts) {
-                mediaPlayer.Position = ts;
-                TimingText.Text = (mediaPlayer.Source != null) ? string.Format("{0}/{1}",
-                        mediaPlayer.Position.ToString(@"mm\:ss"),
-                        mediaPlayer.NaturalDuration.TimeSpan.ToString(@"mm\:ss"))
-                    : TimingText.Text = "00:00";
+            if (audioPlayerController.Position != ts) {
+                audioPlayerController.Position = ts;
+                TimingText.Text = audioPlayerController.TimingString;
             }
         }
     }

@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	<feed xmlns:im="http://itunes.apple.com/rss" xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+		<id>http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topsongs/limit=10/xml</id><title>iTunes Store: Top Songs</title><updated>2020-04-09T01:50:36-07:00</updated><link rel="alternate" type="text/html" href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewTop?cc=us&amp;id=1&amp;popId=1"/><link rel="self" href="http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topsongs/limit=10/xml"/><icon>http://itunes.apple.com/favicon.ico</icon><author><name>iTunes Store</name><uri>http://www.apple.com/itunes/</uri></author><rights>Copyright 2008 Apple Inc.</rights>
+		
+			<entry>
+				<updated>2020-04-09T01:50:36-07:00</updated>
+				
+					<id im:id="1499378607">https://music.apple.com/us/album/blinding-lights/1499378108?i=1499378607&amp;uo=2</id>
+				
+					<title>Blinding Lights - The Weeknd</title>
+				
+					
+				
+					<im:name>Blinding Lights</im:name>
+				
+					<link rel="alternate" type="text/html" href="https://music.apple.com/us/album/blinding-lights/1499378108?i=1499378607&amp;uo=2"/>
+				
+					<im:contentType term="Music" label="Music"><im:contentType term="Track" label="Track"/></im:contentType>
+				
+					<category im:id="15" term="R&amp;B/Soul" scheme="https://music.apple.com/us/genre/music-r-b-soul/id15?uo=2" label="R&amp;B/Soul"/>
+				
+					<link title="Preview" rel="enclosure" type="audio/x-m4a" href="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/00/23/d3/0023d3cf-28fa-5c68-ff5f-fa8ecd213f0e/mzaf_8438152034316872349.plus.aac.p.m4a" im:assetType="preview">
+					<im:duration>30000</im:duration></link>
+				
+					<im:artist href="https://music.apple.com/us/artist/the-weeknd/479756766?uo=2">The Weeknd</im:artist>
+				
+					<im:price amount="1.29000" currency="USD">$1.29</im:price>
+				
+					<im:image height="55">https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/06/e5/8c/06e58ce4-a813-8d5b-ef64-03a69064773c/20UMGIM12176.rgb.jpg/55x55bb.png</im:image>
+				
+					<im:image height="60">https://is3-ssl.mzstatic.com/image/thumb/Music124/v4/06/e5/8c/06e58ce4-a813-8d5b-ef64-03a69064773c/20UMGIM12176.rgb.jpg/60x60bb.png</im:image>
+				
+					<im:image height="170">https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/06/e5/8c/06e58ce4-a813-8d5b-ef64-03a69064773c/20UMGIM12176.rgb.jpg/170x170bb.png</im:image>
+				
+					<rights>&#8471; 2020 The Weeknd XO, Inc., marketed by Republic Records, a division of UMG Recordings, Inc.</rights>
+				
+					<im:releaseDate label="November 29, 2019">2019-11-29T00:00:00-07:00</im:releaseDate>
+				
+					<im:collection><im:name>After Hours</im:name><link rel="alternate" type="text/html" href="https://music.apple.com/us/album/after-hours/1499378108?uo=2"/><im:contentType term="Music" label="Music"><im:contentType term="Album" label="Album"/></im:contentType></im:collection>
+				
+				
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+                    
+                        &lt;td align=&quot;center&quot; width=&quot;166&quot; valign=&quot;top&quot;&gt;
+                            &lt;a href=&quot;https://music.apple.com/us/album/blinding-lights/1499378108?i=1499378607&amp;uo=2&quot;&gt;&lt;img border=&quot;0&quot; alt=&quot;The Weeknd - Blinding Lights  artwork&quot; src=&quot;https://is4-ssl.mzstatic.com/image/thumb/Music124/v4/06/e5/8c/06e58ce4-a813-8d5b-ef64-03a69064773c/20UMGIM12176.rgb.jpg/100x100bb.png&quot; /&gt;&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td width=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; width=&quot;10&quot; height=&quot;1&quot; src=&quot;http://r.mzstatic.com/images/spacer.gif&quot; /&gt;&lt;/td&gt;
+                    	&lt;td width=&quot;95%&quot;&gt;
+                    
+                    
+                        &lt;b&gt;&lt;a href=&quot;https://music.apple.com/us/album/blinding-lights/1499378108?i=1499378607&amp;uo=2&quot;&gt;Blinding Lights&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+                        
+                        
+                        
+                        
+                            &lt;a href=&quot;https://music.apple.com/us/album/after-hours/1499378108?uo=2&quot;&gt;After Hours&lt;/a&gt;&lt;br/&gt;
+                        
+
+                        &lt;a href=&quot;https://music.apple.com/us/artist/the-weeknd/479756766?uo=2&quot;&gt;The Weeknd&lt;/a&gt;
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+						
+						 	&lt;br/&gt;
+                            &lt;b&gt;Genre:&lt;/b&gt; &lt;a href=&quot;https://music.apple.com/us/genre/music-r-b-soul/id15?uo=2&quot;&gt;R&amp;B/Soul&lt;/a&gt;
+                        
+						 	&lt;br/&gt;
+                            &lt;b&gt;Price:&lt;/b&gt; $1.29
+                        
+						 	&lt;br/&gt;
+                            &lt;b&gt;Release Date:&lt;/b&gt; November 29, 2019
+                        
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            
+            
+            
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt; &amp;#169; ℗ 2020 The Weeknd XO, Inc., marketed by Republic Records, a division of UMG Recordings, Inc.&lt;/font&gt;
+	        
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+				
+			</entry>
+		
+			<entry>
+				<updated>2020-04-09T01:50:36-07:00</updated>
+				
+					<id im:id="1102977868">https://music.apple.com/us/album/in-spite-of-ourselves/1102976936?i=1102977868&amp;uo=2</id>
+				
+					<title>In Spite of Ourselves - John Prine</title>
+				
+					
+				
+					<im:name>In Spite of Ourselves</im:name>
+				
+					<link rel="alternate" type="text/html" href="https://music.apple.com/us/album/in-spite-of-ourselves/1102976936?i=1102977868&amp;uo=2"/>
+				
+					<im:contentType term="Music" label="Music"><im:contentType term="Track" label="Track"/></im:contentType>
+				
+					<category im:id="1065" term="Folk-Rock" scheme="https://music.apple.com/us/genre/music-singer-songwriter-folk-rock/id1065?uo=2" label="Folk-Rock"/>
+				
+					<link title="Preview" rel="enclosure" type="audio/x-m4a" href="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview20/v4/75/bf/9c/75bf9c51-f1ff-8a9b-22b3-c42feab4947d/mzaf_3710570101742665430.plus.aac.p.m4a" im:assetType="preview"><im:duration>30000</im:duration></link>
+				
+					<im:artist href="https://music.apple.com/us/artist/john-prine/157060?uo=2">John Prine</im:artist>
+				
+					<im:price amount="1.29000" currency="USD">$1.29</im:price>
+				
+					<im:image height="55">https://is3-ssl.mzstatic.com/image/thumb/Music49/v4/76/4f/8b/764f8b49-6e8e-8668-4d65-1421547b019a/886445839814.jpg/55x55bb.png</im:image>
+				
+					<im:image height="60">https://is5-ssl.mzstatic.com/image/thumb/Music49/v4/76/4f/8b/764f8b49-6e8e-8668-4d65-1421547b019a/886445839814.jpg/60x60bb.png</im:image>
+				
+					<im:image height="170">https://is5-ssl.mzstatic.com/image/thumb/Music49/v4/76/4f/8b/764f8b49-6e8e-8668-4d65-1421547b019a/886445839814.jpg/170x170bb.png</im:image>
+				
+					<rights>&#8471; 1999 Oh Boy Records marketed and distributed by Thirty Tigers</rights>
+				
+					<im:releaseDate label="September 14, 1999">1999-09-14T05:00:00-07:00</im:releaseDate>
+				
+					<im:collection><im:name>In Spite of Ourselves</im:name><link rel="alternate" type="text/html" href="https://music.apple.com/us/album/in-spite-of-ourselves/1102976936?uo=2"/><im:contentType term="Music" label="Music"><im:contentType term="Album" label="Album"/></im:contentType></im:collection>
+				
+				
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+                    
+                        &lt;td align=&quot;center&quot; width=&quot;166&quot; valign=&quot;top&quot;&gt;
+                            &lt;a href=&quot;https://music.apple.com/us/album/in-spite-of-ourselves/1102976936?i=1102977868&amp;uo=2&quot;&gt;&lt;img border=&quot;0&quot; alt=&quot;John Prine - In Spite of Ourselves  artwork&quot; src=&quot;https://is5-ssl.mzstatic.com/image/thumb/Music49/v4/76/4f/8b/764f8b49-6e8e-8668-4d65-1421547b019a/886445839814.jpg/100x100bb.png&quot; /&gt;&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td width=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; width=&quot;10&quot; height=&quot;1&quot; src=&quot;http://r.mzstatic.com/images/spacer.gif&quot; /&gt;&lt;/td&gt;
+                    	&lt;td width=&quot;95%&quot;&gt;
+                    
+                    
+                        &lt;b&gt;&lt;a href=&quot;https://music.apple.com/us/album/in-spite-of-ourselves/1102976936?i=1102977868&amp;uo=2&quot;&gt;In Spite of Ourselves&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+                        
+                        
+                        
+                        
+                            &lt;a href=&quot;https://music.apple.com/us/album/in-spite-of-ourselves/1102976936?uo=2&quot;&gt;In Spite of Ourselves&lt;/a&gt;&lt;br/&gt;
+                        
+
+                        &lt;a href=&quot;https://music.apple.com/us/artist/john-prine/157060?uo=2&quot;&gt;John Prine&lt;/a&gt;
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+						
+						 	&lt;br/&gt;
+                            &lt;b&gt;Genre:&lt;/b&gt; &lt;a href=&quot;https://music.apple.com/us/genre/music-singer-songwriter-folk-rock/id1065?uo=2&quot;&gt;Folk-Rock&lt;/a&gt;
+                        
+						 	&lt;br/&gt;
+                            &lt;b&gt;Price:&lt;/b&gt; $1.29
+                        
+						 	&lt;br/&gt;
+                            &lt;b&gt;Release Date:&lt;/b&gt; September 14, 1999
+                        
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            
+            
+            
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt; &amp;#169; ℗ 1999 Oh Boy Records marketed and distributed by Thirty Tigers&lt;/font&gt;
+	        
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+				
+			</entry>
+		
+			<entry>
+				<updated>2020-04-09T01:50:36-07:00</updated>
+				
+					<id im:id="1437320326">https://music.apple.com/us/album/angel-from-montgomery-live/1437320002?i=1437320326&amp;uo=2</id>
+				
+					<title>Angel from Montgomery (Live) - John Prine &amp; Bonnie Raitt</title>
+				
+					
+				
+					<im:name>Angel from Montgomery (Live)</im:name>
+				
+					<link rel="alternate" type="text/html" href="https://music.apple.com/us/album/angel-from-montgomery-live/1437320002?i=1437320326&amp;uo=2"/>
+				
+					<im:contentType term="Music" label="Music"><im:contentType term="Track" label="Track"/></im:contentType>
+				
+					<category im:id="6" term="Country" scheme="https://music.apple.com/us/genre/music-country/id6?uo=2" label="Country"/>
+				
+					<link title="Preview" rel="enclosure" type="audio/x-m4a" href="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview128/v4/af/7d/74/af7d7415-28cb-b256-75bb-66d30e562535/mzaf_4815632074263078375.plus.aac.p.m4a" im:assetType="preview"><im:duration>30000</im:duration></link>
+				
+					<im:artist href="https://music.apple.com/us/artist/john-prine/157060?uo=2">John Prine &amp; Bonnie Raitt</im:artist>
+				
+					<im:price amount="1.29000" currency="USD">$1.29</im:price>
+				
+					<im:image height="55">https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/b3/66/c2/b366c2b7-ba40-926f-a107-a9ed29bd9a5a/4050538393026.jpg/55x55bb.png</im:image>
+				
+					<im:image height="60">https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/b3/66/c2/b366c2b7-ba40-926f-a107-a9ed29bd9a5a/4050538393026.jpg/60x60bb.png</im:image>
+				
+					<im:image height="170">https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/b3/66/c2/b366c2b7-ba40-926f-a107-a9ed29bd9a5a/4050538393026.jpg/170x170bb.png</im:image>
+				
+					<rights>&#8471; 1995 BMG Rights Management (US) LLC</rights>
+				
+					<im:releaseDate label="January 1, 1985">1985-01-01T04:00:00-07:00</im:releaseDate>
+				
+					<im:collection><im:name>Tribute To Steve Goodman (Live)</im:name><link rel="alternate" type="text/html" href="https://music.apple.com/us/album/tribute-to-steve-goodman-live/1437320002?uo=2"/><im:contentType term="Music" label="Music"><im:contentType term="Album" label="Album"/></im:contentType></im:collection>
+				
+				
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+                    
+                        &lt;td align=&quot;center&quot; width=&quot;166&quot; valign=&quot;top&quot;&gt;
+                            &lt;a href=&quot;https://music.apple.com/us/album/angel-from-montgomery-live/1437320002?i=1437320326&amp;uo=2&quot;&gt;&lt;img border=&quot;0&quot; alt=&quot;John Prine &amp; Bonnie Raitt - Angel from Montgomery (Live)  artwork&quot; src=&quot;https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/b3/66/c2/b366c2b7-ba40-926f-a107-a9ed29bd9a5a/4050538393026.jpg/100x100bb.png&quot; /&gt;&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td width=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; width=&quot;10&quot; height=&quot;1&quot; src=&quot;http://r.mzstatic.com/images/spacer.gif&quot; /&gt;&lt;/td&gt;
+                    	&lt;td width=&quot;95%&quot;&gt;
+                    
+                    
+                        &lt;b&gt;&lt;a href=&quot;https://music.apple.com/us/album/angel-from-montgomery-live/1437320002?i=1437320326&amp;uo=2&quot;&gt;Angel from Montgomery (Live)&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+                        
+                        
+                        
+                        
+                            &lt;a href=&quot;https://music.apple.com/us/album/tribute-to-steve-goodman-live/1437320002?uo=2&quot;&gt;Tribute To Steve Goodman (Live)&lt;/a&gt;&lt;br/&gt;
+                        
+
+                        &lt;a href=&quot;https://music.apple.com/us/artist/john-prine/157060?uo=2&quot;&gt;John Prine &amp;amp; Bonnie Raitt&lt;/a&gt;
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+						
+						 	&lt;br/&gt;
+                            &lt;b&gt;Genre:&lt;/b&gt; &lt;a href=&quot;https://music.apple.com/us/genre/music-country/id6?uo=2&quot;&gt;Country&lt;/a&gt;
+                        
+						 	&lt;br/&gt;
+                            &lt;b&gt;Price:&lt;/b&gt; $1.29
+                        
+						 	&lt;br/&gt;
+                            &lt;b&gt;Release Date:&lt;/b&gt; January 1, 1985
+                        
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            
+            
+            
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt; &amp;#169; ℗ 1995 BMG Rights Management (US) LLC&lt;/font&gt;
+	        
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+				
+			</entry>
+		
+			<entry>
+				<updated>2020-04-09T01:50:36-07:00</updated>
+				
+					<id im:id="1337995741">https://music.apple.com/us/album/when-i-get-to-heaven/1337994577?i=1337995741&amp;uo=2</id>
+				
+					<title>When I Get to Heaven - John Prine</title>
+				
+					
+				
+					<im:name>When I Get to Heaven</im:name>
+				
+					<link rel="alternate" type="text/html" href="https://music.apple.com/us/album/when-i-get-to-heaven/1337994577?i=1337995741&amp;uo=2"/>
+				
+					<im:contentType term="Music" label="Music"><im:contentType term="Track" label="Track"/></im:contentType>
+				
+					<category im:id="10" term="Singer/Songwriter" scheme="https://music.apple.com/us/genre/music-singer-songwriter/id10?uo=2" label="Singer/Songwriter"/>
+				
+					<link title="Preview" rel="enclosure" type="audio/x-m4a" href="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview128/v4/7b/1e/45/7b1e458d-8190-eb48-6742-3b45b10431fd/mzaf_736036731810305438.plus.aac.p.m4a" im:assetType="preview"><im:duration>30000</im:duration></link>
+				
+					<im:artist href="https://music.apple.com/us/artist/john-prine/157060?uo=2">John Prine</im:artist>
+				
+					<im:price amount="1.29000" currency="USD">$1.29</im:price>
+				
+					<im:image height="55">https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/5f/f6/b4/5ff6b410-839f-174d-c631-f2903355a49e/192562099483.jpg/55x55bb.png</im:image>
+				
+					<im:image height="60">https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/5f/f6/b4/5ff6b410-839f-174d-c631-f2903355a49e/192562099483.jpg/60x60bb.png</im:image>
+				
+					<im:image height="170">https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/5f/f6/b4/5ff6b410-839f-174d-c631-f2903355a49e/192562099483.jpg/170x170bb.png</im:image>
+				
+					<rights>&#8471; 2018 Oh Boy Records</rights>
+				
+					<im:releaseDate label="April 13, 2018">2018-04-13T05:00:00-07:00</im:releaseDate>
+				
+					<im:collection><im:name>The Tree of Forgiveness</im:name><link rel="alternate" type="text/html" href="https://music.apple.com/us/album/the-tree-of-forgiveness/1337994577?uo=2"/><im:contentType term="Music" label="Music"><im:contentType term="Album" label="Album"/></im:contentType></im:collection>
+				
+				
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+                    
+                        &lt;td align=&quot;center&quot; width=&quot;166&quot; valign=&quot;top&quot;&gt;
+                            &lt;a href=&quot;https://music.apple.com/us/album/when-i-get-to-heaven/1337994577?i=1337995741&amp;uo=2&quot;&gt;&lt;img border=&quot;0&quot; alt=&quot;John Prine - When I Get to Heaven  artwork&quot; src=&quot;https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/5f/f6/b4/5ff6b410-839f-174d-c631-f2903355a49e/192562099483.jpg/100x100bb.png&quot; /&gt;&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td width=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; width=&quot;10&quot; height=&quot;1&quot; src=&quot;http://r.mzstatic.com/images/spacer.gif&quot; /&gt;&lt;/td&gt;
+                    	&lt;td width=&quot;95%&quot;&gt;
+                    
+                    
+                        &lt;b&gt;&lt;a href=&quot;https://music.apple.com/us/album/when-i-get-to-heaven/1337994577?i=1337995741&amp;uo=2&quot;&gt;When I Get to Heaven&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+                        
+                        
+                        
+                        
+                            &lt;a href=&quot;https://music.apple.com/us/album/the-tree-of-forgiveness/1337994577?uo=2&quot;&gt;The Tree of Forgiveness&lt;/a&gt;&lt;br/&gt;
+                        
+
+                        &lt;a href=&quot;https://music.apple.com/us/artist/john-prine/157060?uo=2&quot;&gt;John Prine&lt;/a&gt;
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+						
+						 	&lt;br/&gt;
+                            &lt;b&gt;Genre:&lt;/b&gt; &lt;a href=&quot;https://music.apple.com/us/genre/music-singer-songwriter/id10?uo=2&quot;&gt;Singer/Songwriter&lt;/a&gt;
+                        
+						 	&lt;br/&gt;
+                            &lt;b&gt;Price:&lt;/b&gt; $1.29
+                        
+						 	&lt;br/&gt;
+                            &lt;b&gt;Release Date:&lt;/b&gt; April 13, 2018
+                        
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            
+            
+            
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt; &amp;#169; ℗ 2018 Oh Boy Records&lt;/font&gt;
+	        
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+				
+			</entry>
+		
+			<entry>
+				<updated>2020-04-09T01:50:36-07:00</updated>
+				
+					<id im:id="1503584665">https://music.apple.com/us/album/last-time-i-say-sorry/1503584660?i=1503584665&amp;uo=2</id>
+				
+					<title>Last Time I Say Sorry - Kane Brown &amp; John Legend</title>
+				
+					
+				
+					<im:name>Last Time I Say Sorry</im:name>
+				
+					<link rel="alternate" type="text/html" href="https://music.apple.com/us/album/last-time-i-say-sorry/1503584660?i=1503584665&amp;uo=2"/>
+				
+					<im:contentType term="Music" label="Music"><im:contentType term="Track" label="Track"/></im:contentType>
+				
+					<category im:id="6" term="Country" scheme="https://music.apple.com/us/genre/music-country/id6?uo=2" label="Country"/>
+				
+					<link title="Preview" rel="enclosure" type="audio/x-m4a" href="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/f7/24/9c/f7249cb4-1559-609d-fd4d-0246693c04e2/mzaf_17856923805719606893.plus.aac.p.m4a" im:assetType="preview"><im:duration>30000</im:duration></link>
+				
+					<im:artist href="https://music.apple.com/us/artist/kane-brown/930928857?uo=2">Kane Brown &amp; John Legend</im:artist>
+				
+					<im:price amount="1.29000" currency="USD">$1.29</im:price>
+				
+					<im:image height="55">https://is2-ssl.mzstatic.com/image/thumb/Music113/v4/88/55/83/88558338-ea2f-3ff5-973c-ffe4c100140b/886448354499.jpg/55x55bb.png</im:image>
+				
+					<im:image height="60">https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/88/55/83/88558338-ea2f-3ff5-973c-ffe4c100140b/886448354499.jpg/60x60bb.png</im:image>
+				
+					<im:image height="170">https://is5-ssl.mzstatic.com/image/thumb/Music113/v4/88/55/83/88558338-ea2f-3ff5-973c-ffe4c100140b/886448354499.jpg/170x170bb.png</im:image>
+				
+					<rights>&#8471; 2020 Sony Music Entertainment. All Rights Reserved.</rights>
+				
+					<im:releaseDate label="March 27, 2020">2020-03-27T00:00:00-07:00</im:releaseDate>
+				
+					<im:collection><im:name>Last Time I Say Sorry - Single</im:name><link rel="alternate" type="text/html" href="https://music.apple.com/us/album/last-time-i-say-sorry-single/1503584660?uo=2"/><im:contentType term="Music" label="Music"><im:contentType term="Album" label="Album"/></im:contentType></im:collection>
+				
+				
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+                    
+                        &lt;td align=&quot;center&quot; width=&quot;166&quot; valign=&quot;top&quot;&gt;
+                            &lt;a href=&quot;https://music.apple.com/us/album/last-time-i-say-sorry/1503584660?i=1503584665&amp;uo=2&quot;&gt;&lt;img border=&quot;0&quot; alt=&quot;Kane Brown &amp; John Legend - Last Time I Say Sorry  artwork&quot; src=&quot;https://is5-ssl.mzstatic.com/image/thumb/Music113/v4/88/55/83/88558338-ea2f-3ff5-973c-ffe4c100140b/886448354499.jpg/100x100bb.png&quot; /&gt;&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td width=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; width=&quot;10&quot; height=&quot;1&quot; src=&quot;http://r.mzstatic.com/images/spacer.gif&quot; /&gt;&lt;/td&gt;
+                    	&lt;td width=&quot;95%&quot;&gt;
+                    
+                    
+                        &lt;b&gt;&lt;a href=&quot;https://music.apple.com/us/album/last-time-i-say-sorry/1503584660?i=1503584665&amp;uo=2&quot;&gt;Last Time I Say Sorry&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+                        
+                        
+                        
+                        
+                            &lt;a href=&quot;https://music.apple.com/us/album/last-time-i-say-sorry-single/1503584660?uo=2&quot;&gt;Last Time I Say Sorry - Single&lt;/a&gt;&lt;br/&gt;
+                        
+
+                        &lt;a href=&quot;https://music.apple.com/us/artist/kane-brown/930928857?uo=2&quot;&gt;Kane Brown &amp;amp; John Legend&lt;/a&gt;
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+						
+						 	&lt;br/&gt;
+                            &lt;b&gt;Genre:&lt;/b&gt; &lt;a href=&quot;https://music.apple.com/us/genre/music-country/id6?uo=2&quot;&gt;Country&lt;/a&gt;
+                        
+						 	&lt;br/&gt;
+                            &lt;b&gt;Price:&lt;/b&gt; $1.29
+                        
+						 	&lt;br/&gt;
+                            &lt;b&gt;Release Date:&lt;/b&gt; March 27, 2020
+                        
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            
+            
+            
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt; &amp;#169; ℗ 2020 Sony Music Entertainment. All Rights Reserved.&lt;/font&gt;
+	        
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+				
+			</entry>
+		
+			<entry>
+				<updated>2020-04-09T01:50:36-07:00</updated>
+				
+					<id im:id="1504373842">https://music.apple.com/us/album/be-light-feat-reba-mcentire-hillary-scott-chris-tomlin/1504373717?i=1504373842&amp;uo=2</id>
+				
+					<title>Be a Light (feat. Reba McEntire, Hillary Scott, Chris Tomlin &amp; Keith Urban) - Thomas Rhett</title>
+				
+					
+				
+					<im:name>Be a Light (feat. Reba McEntire, Hillary Scott, Chris Tomlin &amp; Keith Urban)</im:name>
+				
+					<link rel="alternate" type="text/html" href="https://music.apple.com/us/album/be-light-feat-reba-mcentire-hillary-scott-chris-tomlin/1504373717?i=1504373842&amp;uo=2"/>
+				
+					<im:contentType term="Music" label="Music"><im:contentType term="Track" label="Track"/></im:contentType>
+				
+					<category im:id="6" term="Country" scheme="https://music.apple.com/us/genre/music-country/id6?uo=2" label="Country"/>
+				
+					<link title="Preview" rel="enclosure" type="audio/x-m4a" href="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/fa/c4/4c/fac44c46-d12d-09a9-baa0-ddefcccb4e2a/mzaf_5281636459776047955.plus.aac.p.m4a" im:assetType="preview"><im:duration>30000</im:duration></link>
+				
+					<im:artist href="https://music.apple.com/us/artist/thomas-rhett/502541718?uo=2">Thomas Rhett</im:artist>
+				
+					<im:price amount="1.29000" currency="USD">$1.29</im:price>
+				
+					<im:image height="55">https://is4-ssl.mzstatic.com/image/thumb/Music123/v4/cc/1c/b4/cc1cb46c-efe6-7f40-96d2-c577c849820e/20OPBMR01167.rgb.jpg/55x55bb.png</im:image>
+				
+					<im:image height="60">https://is3-ssl.mzstatic.com/image/thumb/Music123/v4/cc/1c/b4/cc1cb46c-efe6-7f40-96d2-c577c849820e/20OPBMR01167.rgb.jpg/60x60bb.png</im:image>
+				
+					<im:image height="170">https://is4-ssl.mzstatic.com/image/thumb/Music123/v4/cc/1c/b4/cc1cb46c-efe6-7f40-96d2-c577c849820e/20OPBMR01167.rgb.jpg/170x170bb.png</im:image>
+				
+					<rights>&#8471; 2020 Big Machine Label Group, LLC</rights>
+				
+					<im:releaseDate label="March 30, 2020">2020-03-30T00:00:00-07:00</im:releaseDate>
+				
+					<im:collection><im:name>Be a Light (feat. Reba McEntire, Hillary Scott, Chris Tomlin &amp; Keith Urban) - Single</im:name><link rel="alternate" type="text/html" href="https://music.apple.com/us/album/be-light-feat-reba-mcentire-hillary-scott-chris-tomlin/1504373717?uo=2"/><im:contentType term="Music" label="Music"><im:contentType term="Album" label="Album"/></im:contentType></im:collection>
+				
+				
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+                    
+                        &lt;td align=&quot;center&quot; width=&quot;166&quot; valign=&quot;top&quot;&gt;
+                            &lt;a href=&quot;https://music.apple.com/us/album/be-light-feat-reba-mcentire-hillary-scott-chris-tomlin/1504373717?i=1504373842&amp;uo=2&quot;&gt;&lt;img border=&quot;0&quot; alt=&quot;Thomas Rhett - Be a Light (feat. Reba McEntire, Hillary Scott, Chris Tomlin &amp; Keith Urban)  artwork&quot; src=&quot;https://is4-ssl.mzstatic.com/image/thumb/Music123/v4/cc/1c/b4/cc1cb46c-efe6-7f40-96d2-c577c849820e/20OPBMR01167.rgb.jpg/100x100bb.png&quot; /&gt;&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td width=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; width=&quot;10&quot; height=&quot;1&quot; src=&quot;http://r.mzstatic.com/images/spacer.gif&quot; /&gt;&lt;/td&gt;
+                    	&lt;td width=&quot;95%&quot;&gt;
+                    
+                    
+                        &lt;b&gt;&lt;a href=&quot;https://music.apple.com/us/album/be-light-feat-reba-mcentire-hillary-scott-chris-tomlin/1504373717?i=1504373842&amp;uo=2&quot;&gt;Be a Light (feat. Reba McEntire, Hillary Scott, Chris Tomlin &amp;amp; Keith Urban)&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+                        
+                        
+                        
+                        
+                            &lt;a href=&quot;https://music.apple.com/us/album/be-light-feat-reba-mcentire-hillary-scott-chris-tomlin/1504373717?uo=2&quot;&gt;Be a Light (feat. Reba McEntire, Hillary Scott, Chris Tomlin &amp;amp; Keith Urban) - Single&lt;/a&gt;&lt;br/&gt;
+                        
+
+                        &lt;a href=&quot;https://music.apple.com/us/artist/thomas-rhett/502541718?uo=2&quot;&gt;Thomas Rhett&lt;/a&gt;
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+						
+						 	&lt;br/&gt;
+                            &lt;b&gt;Genre:&lt;/b&gt; &lt;a href=&quot;https://music.apple.com/us/genre/music-country/id6?uo=2&quot;&gt;Country&lt;/a&gt;
+                        
+						 	&lt;br/&gt;
+                            &lt;b&gt;Price:&lt;/b&gt; $1.29
+                        
+						 	&lt;br/&gt;
+                            &lt;b&gt;Release Date:&lt;/b&gt; March 30, 2020
+                        
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            
+            
+            
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt; &amp;#169; ℗ 2020 Big Machine Label Group, LLC&lt;/font&gt;
+	        
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+				
+			</entry>
+		
+			<entry>
+				<updated>2020-04-09T01:50:36-07:00</updated>
+				
+					<id im:id="1018524560">https://music.apple.com/us/album/paradise/1018524551?i=1018524560&amp;uo=2</id>
+				
+					<title>Paradise - John Prine</title>
+				
+					
+				
+					<im:name>Paradise</im:name>
+				
+					<link rel="alternate" type="text/html" href="https://music.apple.com/us/album/paradise/1018524551?i=1018524560&amp;uo=2"/>
+				
+					<im:contentType term="Music" label="Music"><im:contentType term="Track" label="Track"/></im:contentType>
+				
+					<category im:id="21" term="Rock" scheme="https://music.apple.com/us/genre/music-rock/id21?uo=2" label="Rock"/>
+				
+					<link title="Preview" rel="enclosure" type="audio/x-m4a" href="https://audio-ssl.itunes.apple.com/itunes-assets/Music7/v4/54/c9/e9/54c9e978-d641-00b3-20f8-77db4dfce3af/mzaf_634386074640879416.plus.aac.p.m4a" im:assetType="preview"><im:duration>30000</im:duration></link>
+				
+					<im:artist href="https://music.apple.com/us/artist/john-prine/157060?uo=2">John Prine</im:artist>
+				
+					<im:price amount="1.29000" currency="USD">$1.29</im:price>
+				
+					<im:image height="55">https://is1-ssl.mzstatic.com/image/thumb/Music1/v4/70/1f/ec/701fec1e-e9c0-6f34-9d0e-43eca7ae1e6a/603497887583.jpg/55x55bb.png</im:image>
+				
+					<im:image height="60">https://is5-ssl.mzstatic.com/image/thumb/Music1/v4/70/1f/ec/701fec1e-e9c0-6f34-9d0e-43eca7ae1e6a/603497887583.jpg/60x60bb.png</im:image>
+				
+					<im:image height="170">https://is4-ssl.mzstatic.com/image/thumb/Music1/v4/70/1f/ec/701fec1e-e9c0-6f34-9d0e-43eca7ae1e6a/603497887583.jpg/170x170bb.png</im:image>
+				
+					<rights>&#8471; 1972 Atlantic Records. Marketed by Rhino Entertainment Company, a Warner Music Group Company.</rights>
+				
+					<im:releaseDate label="January 1, 1971">1971-01-01T04:00:00-07:00</im:releaseDate>
+				
+					<im:collection><im:name>John Prine</im:name><link rel="alternate" type="text/html" href="https://music.apple.com/us/album/john-prine/1018524551?uo=2"/><im:contentType term="Music" label="Music"><im:contentType term="Album" label="Album"/></im:contentType></im:collection>
+				
+				
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+                    
+                        &lt;td align=&quot;center&quot; width=&quot;166&quot; valign=&quot;top&quot;&gt;
+                            &lt;a href=&quot;https://music.apple.com/us/album/paradise/1018524551?i=1018524560&amp;uo=2&quot;&gt;&lt;img border=&quot;0&quot; alt=&quot;John Prine - Paradise  artwork&quot; src=&quot;https://is4-ssl.mzstatic.com/image/thumb/Music1/v4/70/1f/ec/701fec1e-e9c0-6f34-9d0e-43eca7ae1e6a/603497887583.jpg/100x100bb.png&quot; /&gt;&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td width=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; width=&quot;10&quot; height=&quot;1&quot; src=&quot;http://r.mzstatic.com/images/spacer.gif&quot; /&gt;&lt;/td&gt;
+                    	&lt;td width=&quot;95%&quot;&gt;
+                    
+                    
+                        &lt;b&gt;&lt;a href=&quot;https://music.apple.com/us/album/paradise/1018524551?i=1018524560&amp;uo=2&quot;&gt;Paradise&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+                        
+                        
+                        
+                        
+                            &lt;a href=&quot;https://music.apple.com/us/album/john-prine/1018524551?uo=2&quot;&gt;John Prine&lt;/a&gt;&lt;br/&gt;
+                        
+
+                        &lt;a href=&quot;https://music.apple.com/us/artist/john-prine/157060?uo=2&quot;&gt;John Prine&lt;/a&gt;
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+						
+						 	&lt;br/&gt;
+                            &lt;b&gt;Genre:&lt;/b&gt; &lt;a href=&quot;https://music.apple.com/us/genre/music-rock/id21?uo=2&quot;&gt;Rock&lt;/a&gt;
+                        
+						 	&lt;br/&gt;
+                            &lt;b&gt;Price:&lt;/b&gt; $1.29
+                        
+						 	&lt;br/&gt;
+                            &lt;b&gt;Release Date:&lt;/b&gt; January 1, 1971
+                        
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            
+            
+            
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt; &amp;#169; ℗ 1972 Atlantic Records. Marketed by Rhino Entertainment Company, a Warner Music Group Company.&lt;/font&gt;
+	        
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+				
+			</entry>
+		
+			<entry>
+				<updated>2020-04-09T01:50:36-07:00</updated>
+				
+					<id im:id="391725484">https://music.apple.com/us/album/lean-on-me/391725408?i=391725484&amp;uo=2</id>
+				
+					<title>Lean On Me - Bill Withers</title>
+				
+					
+				
+					<im:name>Lean On Me</im:name>
+				
+					<link rel="alternate" type="text/html" href="https://music.apple.com/us/album/lean-on-me/391725408?i=391725484&amp;uo=2"/>
+				
+					<im:contentType term="Music" label="Music"><im:contentType term="Track" label="Track"/></im:contentType>
+				
+					<category im:id="15" term="R&amp;B/Soul" scheme="https://music.apple.com/us/genre/music-r-b-soul/id15?uo=2" label="R&amp;B/Soul"/>
+				
+					<link title="Preview" rel="enclosure" type="audio/x-m4a" href="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/3b/87/f7/3b87f760-3c28-fe9f-1bea-7f5a5cbe123c/mzaf_5391851475138728815.plus.aac.p.m4a" im:assetType="preview"><im:duration>30000</im:duration></link>
+				
+					<im:artist href="https://music.apple.com/us/artist/bill-withers/339834?uo=2">Bill Withers</im:artist>
+				
+					<im:price amount="1.29000" currency="USD">$1.29</im:price>
+				
+					<im:image height="55">https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/94/66/bb/9466bbc0-ab50-e80c-d4da-7340d3495062/884977735840.jpg/55x55bb.png</im:image>
+				
+					<im:image height="60">https://is5-ssl.mzstatic.com/image/thumb/Music123/v4/94/66/bb/9466bbc0-ab50-e80c-d4da-7340d3495062/884977735840.jpg/60x60bb.png</im:image>
+				
+					<im:image height="170">https://is2-ssl.mzstatic.com/image/thumb/Music123/v4/94/66/bb/9466bbc0-ab50-e80c-d4da-7340d3495062/884977735840.jpg/170x170bb.png</im:image>
+				
+					<rights>&#8471; This compilation (P) 1994 Sony Music Entertainment</rights>
+				
+					<im:releaseDate label="January 1, 1972">1972-01-01T00:00:00-07:00</im:releaseDate>
+				
+					<im:collection><im:name>The Best Of Bill Withers: Lean On Me</im:name><link rel="alternate" type="text/html" href="https://music.apple.com/us/album/the-best-of-bill-withers-lean-on-me/391725408?uo=2"/><im:contentType term="Music" label="Music"><im:contentType term="Album" label="Album"/></im:contentType></im:collection>
+				
+				
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+                    
+                        &lt;td align=&quot;center&quot; width=&quot;166&quot; valign=&quot;top&quot;&gt;
+                            &lt;a href=&quot;https://music.apple.com/us/album/lean-on-me/391725408?i=391725484&amp;uo=2&quot;&gt;&lt;img border=&quot;0&quot; alt=&quot;Bill Withers - Lean On Me  artwork&quot; src=&quot;https://is2-ssl.mzstatic.com/image/thumb/Music123/v4/94/66/bb/9466bbc0-ab50-e80c-d4da-7340d3495062/884977735840.jpg/100x100bb.png&quot; /&gt;&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td width=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; width=&quot;10&quot; height=&quot;1&quot; src=&quot;http://r.mzstatic.com/images/spacer.gif&quot; /&gt;&lt;/td&gt;
+                    	&lt;td width=&quot;95%&quot;&gt;
+                    
+                    
+                        &lt;b&gt;&lt;a href=&quot;https://music.apple.com/us/album/lean-on-me/391725408?i=391725484&amp;uo=2&quot;&gt;Lean On Me&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+                        
+                        
+                        
+                        
+                            &lt;a href=&quot;https://music.apple.com/us/album/the-best-of-bill-withers-lean-on-me/391725408?uo=2&quot;&gt;The Best Of Bill Withers: Lean On Me&lt;/a&gt;&lt;br/&gt;
+                        
+
+                        &lt;a href=&quot;https://music.apple.com/us/artist/bill-withers/339834?uo=2&quot;&gt;Bill Withers&lt;/a&gt;
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+						
+						 	&lt;br/&gt;
+                            &lt;b&gt;Genre:&lt;/b&gt; &lt;a href=&quot;https://music.apple.com/us/genre/music-r-b-soul/id15?uo=2&quot;&gt;R&amp;B/Soul&lt;/a&gt;
+                        
+						 	&lt;br/&gt;
+                            &lt;b&gt;Price:&lt;/b&gt; $1.29
+                        
+						 	&lt;br/&gt;
+                            &lt;b&gt;Release Date:&lt;/b&gt; January 1, 1972
+                        
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            
+            
+            
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt; &amp;#169; ℗ This compilation (P) 1994 Sony Music Entertainment&lt;/font&gt;
+	        
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+				
+			</entry>
+		
+			<entry>
+				<updated>2020-04-09T01:50:36-07:00</updated>
+				
+					<id im:id="996788062">https://music.apple.com/us/album/rise-up/996787628?i=996788062&amp;uo=2</id>
+				
+					<title>Rise Up - Andra Day</title>
+				
+					
+				
+					<im:name>Rise Up</im:name>
+				
+					<link rel="alternate" type="text/html" href="https://music.apple.com/us/album/rise-up/996787628?i=996788062&amp;uo=2"/>
+				
+					<im:contentType term="Music" label="Music"><im:contentType term="Track" label="Track"/></im:contentType>
+				
+					<category im:id="15" term="R&amp;B/Soul" scheme="https://music.apple.com/us/genre/music-r-b-soul/id15?uo=2" label="R&amp;B/Soul"/>
+				
+					<link title="Preview" rel="enclosure" type="audio/x-m4a" href="https://audio-ssl.itunes.apple.com/itunes-assets/Music7/v4/ed/88/6e/ed886ee5-8b1a-d8d0-7061-2b0a39e88927/mzaf_6541725816985423280.plus.aac.p.m4a" im:assetType="preview"><im:duration>30000</im:duration></link>
+				
+					<im:artist href="https://music.apple.com/us/artist/andra-day/677081663?uo=2">Andra Day</im:artist>
+				
+					<im:price amount="1.29000" currency="USD">$1.29</im:price>
+				
+					<im:image height="55">https://is5-ssl.mzstatic.com/image/thumb/Music7/v4/2b/34/e6/2b34e60d-a0c5-a9cf-131f-faac9b06ab92/dj.jnvitiaq.jpg/55x55bb.png</im:image>
+				
+					<im:image height="60">https://is4-ssl.mzstatic.com/image/thumb/Music7/v4/2b/34/e6/2b34e60d-a0c5-a9cf-131f-faac9b06ab92/dj.jnvitiaq.jpg/60x60bb.png</im:image>
+				
+					<im:image height="170">https://is2-ssl.mzstatic.com/image/thumb/Music7/v4/2b/34/e6/2b34e60d-a0c5-a9cf-131f-faac9b06ab92/dj.jnvitiaq.jpg/170x170bb.png</im:image>
+				
+					<rights>&#8471; 2015 Warner Records Inc.</rights>
+				
+					<im:releaseDate label="August 28, 2015">2015-08-28T00:00:00-07:00</im:releaseDate>
+				
+					<im:collection><im:name>Cheers to the Fall</im:name><link rel="alternate" type="text/html" href="https://music.apple.com/us/album/cheers-to-the-fall/996787628?uo=2"/><im:contentType term="Music" label="Music"><im:contentType term="Album" label="Album"/></im:contentType></im:collection>
+				
+				
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+                    
+                        &lt;td align=&quot;center&quot; width=&quot;166&quot; valign=&quot;top&quot;&gt;
+                            &lt;a href=&quot;https://music.apple.com/us/album/rise-up/996787628?i=996788062&amp;uo=2&quot;&gt;&lt;img border=&quot;0&quot; alt=&quot;Andra Day - Rise Up  artwork&quot; src=&quot;https://is2-ssl.mzstatic.com/image/thumb/Music7/v4/2b/34/e6/2b34e60d-a0c5-a9cf-131f-faac9b06ab92/dj.jnvitiaq.jpg/100x100bb.png&quot; /&gt;&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td width=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; width=&quot;10&quot; height=&quot;1&quot; src=&quot;http://r.mzstatic.com/images/spacer.gif&quot; /&gt;&lt;/td&gt;
+                    	&lt;td width=&quot;95%&quot;&gt;
+                    
+                    
+                        &lt;b&gt;&lt;a href=&quot;https://music.apple.com/us/album/rise-up/996787628?i=996788062&amp;uo=2&quot;&gt;Rise Up&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+                        
+                        
+                        
+                        
+                            &lt;a href=&quot;https://music.apple.com/us/album/cheers-to-the-fall/996787628?uo=2&quot;&gt;Cheers to the Fall&lt;/a&gt;&lt;br/&gt;
+                        
+
+                        &lt;a href=&quot;https://music.apple.com/us/artist/andra-day/677081663?uo=2&quot;&gt;Andra Day&lt;/a&gt;
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+						
+						 	&lt;br/&gt;
+                            &lt;b&gt;Genre:&lt;/b&gt; &lt;a href=&quot;https://music.apple.com/us/genre/music-r-b-soul/id15?uo=2&quot;&gt;R&amp;B/Soul&lt;/a&gt;
+                        
+						 	&lt;br/&gt;
+                            &lt;b&gt;Price:&lt;/b&gt; $1.29
+                        
+						 	&lt;br/&gt;
+                            &lt;b&gt;Release Date:&lt;/b&gt; August 28, 2015
+                        
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            
+            
+            
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt; &amp;#169; ℗ 2015 Warner Records Inc.&lt;/font&gt;
+	        
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+				
+			</entry>
+		
+			<entry>
+				<updated>2020-04-09T01:50:36-07:00</updated>
+				
+					<id im:id="1504855993">https://music.apple.com/us/album/ill-wait/1504855990?i=1504855993&amp;uo=2</id>
+				
+					<title>I&#39;ll Wait - Kygo &amp; Sasha Sloan</title>
+				
+					
+				
+					<im:name>I&#39;ll Wait</im:name>
+				
+					<link rel="alternate" type="text/html" href="https://music.apple.com/us/album/ill-wait/1504855990?i=1504855993&amp;uo=2"/>
+				
+					<im:contentType term="Music" label="Music"><im:contentType term="Track" label="Track"/></im:contentType>
+				
+					<category im:id="17" term="Dance" scheme="https://music.apple.com/us/genre/music-dance/id17?uo=2" label="Dance"/>
+				
+					<link title="Preview" rel="enclosure" type="audio/x-m4a" href="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview113/v4/11/f3/db/11f3dbf2-2fe6-8e0a-ae13-b970cd9926b5/mzaf_14452077570504718199.plus.aac.p.m4a" im:assetType="preview"><im:duration>30000</im:duration></link>
+				
+					<im:artist href="https://music.apple.com/us/artist/kygo/635806094?uo=2">Kygo &amp; Sasha Sloan</im:artist>
+				
+					<im:price amount="1.29000" currency="USD">$1.29</im:price>
+				
+					<im:image height="55">https://is2-ssl.mzstatic.com/image/thumb/Music123/v4/71/ea/13/71ea13d9-b706-fd35-3936-beac4ee7e5a4/886448382157.jpg/55x55bb.png</im:image>
+				
+					<im:image height="60">https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/71/ea/13/71ea13d9-b706-fd35-3936-beac4ee7e5a4/886448382157.jpg/60x60bb.png</im:image>
+				
+					<im:image height="170">https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/71/ea/13/71ea13d9-b706-fd35-3936-beac4ee7e5a4/886448382157.jpg/170x170bb.png</im:image>
+				
+					<rights>&#8471; 2020 Kygo AS under exclusive license to Sony Music International Ltd</rights>
+				
+					<im:releaseDate label="April 3, 2020">2020-04-03T00:00:00-07:00</im:releaseDate>
+				
+					<im:collection><im:name>I&#39;ll Wait - Single</im:name><link rel="alternate" type="text/html" href="https://music.apple.com/us/album/ill-wait-single/1504855990?uo=2"/><im:contentType term="Music" label="Music"><im:contentType term="Album" label="Album"/></im:contentType></im:collection>
+				
+				
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+                    
+                        &lt;td align=&quot;center&quot; width=&quot;166&quot; valign=&quot;top&quot;&gt;
+                            &lt;a href=&quot;https://music.apple.com/us/album/ill-wait/1504855990?i=1504855993&amp;uo=2&quot;&gt;&lt;img border=&quot;0&quot; alt=&quot;Kygo &amp; Sasha Sloan - I'll Wait  artwork&quot; src=&quot;https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/71/ea/13/71ea13d9-b706-fd35-3936-beac4ee7e5a4/886448382157.jpg/100x100bb.png&quot; /&gt;&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td width=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; width=&quot;10&quot; height=&quot;1&quot; src=&quot;http://r.mzstatic.com/images/spacer.gif&quot; /&gt;&lt;/td&gt;
+                    	&lt;td width=&quot;95%&quot;&gt;
+                    
+                    
+                        &lt;b&gt;&lt;a href=&quot;https://music.apple.com/us/album/ill-wait/1504855990?i=1504855993&amp;uo=2&quot;&gt;I'll Wait&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+                        
+                        
+                        
+                        
+                            &lt;a href=&quot;https://music.apple.com/us/album/ill-wait-single/1504855990?uo=2&quot;&gt;I'll Wait - Single&lt;/a&gt;&lt;br/&gt;
+                        
+
+                        &lt;a href=&quot;https://music.apple.com/us/artist/kygo/635806094?uo=2&quot;&gt;Kygo &amp;amp; Sasha Sloan&lt;/a&gt;
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+						
+						 	&lt;br/&gt;
+                            &lt;b&gt;Genre:&lt;/b&gt; &lt;a href=&quot;https://music.apple.com/us/genre/music-dance/id17?uo=2&quot;&gt;Dance&lt;/a&gt;
+                        
+						 	&lt;br/&gt;
+                            &lt;b&gt;Price:&lt;/b&gt; $1.29
+                        
+						 	&lt;br/&gt;
+                            &lt;b&gt;Release Date:&lt;/b&gt; April 3, 2020
+                        
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            
+            
+            
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt; &amp;#169; ℗ 2020 Kygo AS under exclusive license to Sony Music International Ltd&lt;/font&gt;
+	        
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+				
+			</entry>
+		
+	</feed>
