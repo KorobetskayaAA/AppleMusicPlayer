@@ -5,7 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AppleMusicPlayer"
         mc:Ignorable="d"
-        Title="Apple Top Songs Player" Height="350" Width="600">
+        Title="Apple Top Songs Player" Height="350" Width="600" MinWidth="300">
+    <Window.Resources>
+        <local:MediaPositionToStringConverter x:Key="MediaPositionToStringConverter"/>
+        <local:TimeSpanToSecondsConverter x:Key="TimeSpanToSecondsConverter"/>
+    </Window.Resources>
     <Window.CommandBindings>
         <CommandBinding Command="ApplicationCommands.Open" Executed="OpenAudioFile_Execute"/>
         <CommandBinding Command="ApplicationCommands.Save"/>
@@ -31,28 +35,45 @@
                 <MenuItem Header="Остановить" Command="MediaCommands.Stop" />
             </MenuItem>
         </Menu>
-        <Grid Grid.Row="1" Margin="7" DockPanel.Dock="Bottom" Height="Auto">
-            <Grid Margin="3">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto" MinWidth="50pt"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-                <Slider Grid.Row="0" Grid.ColumnSpan="4"
-                        x:Name="TimingProgress" 
-                        Minimum="0" Maximum="1" Value="0" 
-                        ValueChanged="TimingProgress_ValueChanged"/>
-                <TextBlock Grid.Row="1" Grid.Column="0"
-                    x:Name="TimingText" Text="0:00/0:00" VerticalAlignment="Center"/>
-                <Button Grid.Row="1" Grid.Column="1" Command="MediaCommands.Play">Играть</Button>
-                <Button Grid.Row="1" Grid.Column="2" Command="MediaCommands.Pause">Пауза</Button>
-                <Button Grid.Row="1" Grid.Column="3" Command="MediaCommands.Stop">Стоп</Button>
-            </Grid>
+        <Grid Grid.Row="1" DockPanel.Dock="Bottom" 
+              x:Name="PlayerControlPanel"
+              Height="Auto" Margin="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" MinWidth="50pt"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" VerticalAlignment="Center">
+                <TextBlock.Text>
+                    <MultiBinding 
+                        Converter="{StaticResource MediaPositionToStringConverter}">
+                        <Binding Path="Position" TargetNullValue="0"/>
+                        <Binding Path="Duration" TargetNullValue="0"/>
+                    </MultiBinding>
+                </TextBlock.Text>
+            </TextBlock>
+            <Slider Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="4"
+                    IsMoveToPointEnabled="True" SmallChange="1" LargeChange="5"
+                    Minimum="0" 
+                    Maximum="{Binding Duration, Converter={StaticResource TimeSpanToSecondsConverter}, TargetNullValue=1}" 
+                    Value="{Binding Position, Converter={StaticResource TimeSpanToSecondsConverter}, TargetNullValue=0}" />
+            <Button Grid.Row="1" Grid.Column="0" Command="MediaCommands.Play">Играть</Button>
+            <Button Grid.Row="1" Grid.Column="1" Command="MediaCommands.Pause">Пауза</Button>
+            <Button Grid.Row="1" Grid.Column="2" Command="MediaCommands.Stop">Стоп</Button>
+            <Slider Grid.Row="1" Grid.Column="3"
+                    Minimum="0" Maximum="1" Value="{Binding Volume}" 
+                    ToolTip="Громкость"
+                    TickPlacement="BottomRight" TickFrequency="0.1" SmallChange="0.01" LargeChange="0" />
+            <Slider Grid.Row="1" Grid.Column="4"
+                    Minimum="-1" Maximum="1" Value="{Binding Balance}" 
+                    ToolTip="Баланс"
+                    LargeChange="0.5" TickPlacement="BottomRight" TickFrequency="0.5" />
         </Grid>
         <ListView x:Name="PlayList" Grid.Row="0" DockPanel.Dock="Right"></ListView>
         <Grid></Grid>

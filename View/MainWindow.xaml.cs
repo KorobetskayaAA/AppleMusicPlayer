@@ -29,22 +29,25 @@ namespace AppleMusicPlayer
         {
             audioPlayerController = new DefaultAudioPlayerController();
             audioPlayerController.MediaFailed += MediaPlayer_MediaFailed;
-            audioPlayerController.MediaOpened += MediaPlayer_MediaOpened;
-            audioPlayerController.Tick += TimingProgress_Tick;
+            audioPlayerController.MediaOpened += MediaPlayer_Updated;
+            audioPlayerController.MediaEnded += MediaPlayer_Updated;
 
             dialogService = new DefaultDialogService();
 
             InitializeComponent();
+
+            PlayerControlPanel.DataContext = audioPlayerController;
         }
 
         private void MediaPlayer_MediaFailed(object sender, ExceptionEventArgs e)
         {
             dialogService.ShowMessage("Ошибка! Не удалось открыть файл!");
+            CommandManager.InvalidateRequerySuggested();
         }
 
-        private void MediaPlayer_MediaOpened(object sender, EventArgs e)
+        private void MediaPlayer_Updated(object sender, EventArgs e)
         {
-            TimingProgress.Maximum = audioPlayerController.Duration.TotalSeconds;
+            CommandManager.InvalidateRequerySuggested();
         }
 
         private void OpenAudioFile_Execute(object target, ExecutedRoutedEventArgs e)
@@ -88,21 +91,6 @@ namespace AppleMusicPlayer
         void Close_Execute(object target, ExecutedRoutedEventArgs e)
         {
             Close();
-        }
-
-        void TimingProgress_Tick(object sender, EventArgs e)
-        {
-            TimingText.Text = audioPlayerController.TimingString;
-            TimingProgress.Value = audioPlayerController.Position.TotalSeconds;
-        }
-
-        private void TimingProgress_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
-        {
-            TimeSpan ts = TimeSpan.FromSeconds(e.NewValue);
-            if (audioPlayerController.Position != ts) {
-                audioPlayerController.Position = ts;
-                TimingText.Text = audioPlayerController.TimingString;
-            }
         }
     }
 }

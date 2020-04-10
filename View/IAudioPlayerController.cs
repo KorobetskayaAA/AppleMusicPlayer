@@ -17,7 +17,6 @@ namespace AppleMusicPlayer
 
         TimeSpan Position { get; set; }
         TimeSpan Duration { get; }
-        public string TimingString { get; }
         event EventHandler MediaEnded;
 
         double Volume { get; set; }
@@ -28,7 +27,5 @@ namespace AppleMusicPlayer
         event EventHandler<ExceptionEventArgs> MediaFailed;
 
         TimeSpan Interval { get; set; }
-        event EventHandler Tick;
-
     }
 }
