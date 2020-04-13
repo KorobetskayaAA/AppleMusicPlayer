@@ -9,6 +9,8 @@ namespace AppleMusicPlayer
     {
         public object Convert(object[] value, Type targetType, object parameter, CultureInfo culture)
         {
+            if (value == null || value.Length != 2 || !(value[0] is TimeSpan && value[1] is TimeSpan))
+                return null;
             TimeSpan position = (TimeSpan)value[0];
             TimeSpan duration = (TimeSpan)value[1];
             string format = @"m\:ss";

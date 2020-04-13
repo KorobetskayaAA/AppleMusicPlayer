@@ -27,6 +27,8 @@ namespace AppleMusicPlayer
 
         public MainWindow()
         {
+            DataContext = SongListFabric.LoadFromRss("appletop25.xml");
+
             audioPlayerController = new DefaultAudioPlayerController();
             audioPlayerController.MediaFailed += MediaPlayer_MediaFailed;
             audioPlayerController.MediaOpened += MediaPlayer_Updated;
