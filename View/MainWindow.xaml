@@ -25,7 +25,7 @@
         </DataTemplate>
     </Window.Resources>
     <Window.CommandBindings>
-        <CommandBinding Command="ApplicationCommands.Open" Executed="OpenAudioFile_Execute"/>
+        <CommandBinding Command="ApplicationCommands.Open"/>
         <CommandBinding Command="ApplicationCommands.Save"/>
         <CommandBinding Command="ApplicationCommands.Close" Executed="Close_Execute"/>
 
@@ -65,6 +65,7 @@
                     <RowDefinition />
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
                 <Image Grid.Row="0" Source="{Binding Image}"/>
                 <TextBlock Grid.Row="1" Text="{Binding Artist}"
@@ -73,23 +74,25 @@
                 <TextBlock Grid.Row="2" Text="{Binding Name}"
                            HorizontalAlignment="Center" FontSize="17"
                            TextWrapping="Wrap"/>
+                <MediaElement Grid.Row="3" Source="{Binding Link}" Height="10"
+                              Name="myMediaElement" LoadedBehavior="Manual" UnloadedBehavior="Stop"/>
             </Grid>
 
             <Grid Grid.Row="1" Grid.Column="0"
-              x:Name="PlayerControlPanel"
-              Height="Auto" Margin="5">
+                  x:Name="PlayerControlPanel"
+                  Height="Auto" Margin="5">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" MinWidth="50pt"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="2*" />
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <TextBlock Grid.Row="0" Grid.Column="0" VerticalAlignment="Center">
+                <TextBlock Grid.Column="0" VerticalAlignment="Center">
                     <TextBlock.Text>
                         <MultiBinding 
                         Converter="{StaticResource MediaPositionToStringConverter}">
@@ -101,36 +104,40 @@
                 <Slider Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="4"
                     IsMoveToPointEnabled="True" SmallChange="1" LargeChange="5"
                     Minimum="0" 
-                    Maximum="{Binding Duration, Converter={StaticResource TimeSpanToSecondsConverter}, TargetNullValue=1}" 
-                    Value="{Binding Position, Converter={StaticResource TimeSpanToSecondsConverter}, TargetNullValue=0}" />
+                    Maximum="{Binding ElementName=myMediaElement, Path=NaturalDuration.TimeSpan, Converter={StaticResource TimeSpanToSecondsConverter}, TargetNullValue=1}" 
+                    Value="{Binding ElementName=myMediaElement, Path=Position, Converter={StaticResource TimeSpanToSecondsConverter}, TargetNullValue=0}" />
                 <Button Grid.Row="1" Grid.Column="0" Command="MediaCommands.Play">Играть</Button>
                 <Button Grid.Row="1" Grid.Column="1" Command="MediaCommands.Pause">Пауза</Button>
                 <Button Grid.Row="1" Grid.Column="2" Command="MediaCommands.Stop">Стоп</Button>
-                <Slider Grid.Row="1" Grid.Column="3"
-                    Minimum="0" Maximum="1" Value="{Binding Volume}" 
+                <TextBlock  Grid.Row="1" Grid.Column="3" FontSize="9" Text="0" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                <TextBlock  Grid.Row="1" Grid.Column="3" FontSize="9" Text="100" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+                <Slider Grid.Row="1" Grid.Column="3" Margin="0,0,0,5"
+                    Minimum="0" Maximum="1" Value="{Binding ElementName=myMediaElement, Path=Volume}" 
                     ToolTip="Громкость"
                     TickPlacement="BottomRight" TickFrequency="0.1" SmallChange="0.01" LargeChange="0" />
-                <Slider Grid.Row="1" Grid.Column="4"
-                    Minimum="-1" Maximum="1" Value="{Binding Balance}" 
+                <TextBlock  Grid.Row="1" Grid.Column="4" FontSize="9" Text="Л" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                <TextBlock  Grid.Row="1" Grid.Column="4" FontSize="9" Text="П" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+                <Slider Grid.Row="1" Grid.Column="4" Margin="0,0,0,5"
+                    Minimum="-1" Maximum="1" Value="{Binding ElementName=myMediaElement, Path=Balance}" 
                     ToolTip="Баланс"
-                    LargeChange="0.5" TickPlacement="BottomRight" TickFrequency="0.5" />
+                    LargeChange="0.5" TickPlacement="BottomRight" TickFrequency="0.5" Grid.ColumnSpan="2" />
             </Grid>
 
             <GridSplitter Width="3" Grid.Column="1" Grid.RowSpan="2" 
                   HorizontalAlignment="Center" VerticalAlignment="Stretch"/>
 
             <ListView x:Name="PlayList" Grid.Column="2" Grid.RowSpan="2" MinWidth="{StaticResource SongItemWidth}"
-                  ItemsSource="{Binding Songs}"
-                  SelectedItem="{Binding ActiveSong}"
-                  ItemTemplate="{StaticResource SongItemTemplate}"
-                  ScrollViewer.HorizontalScrollBarVisibility="Disabled">
-            <ListBox.ItemsPanel>
-                <ItemsPanelTemplate>
-                    <WrapPanel VerticalAlignment="Top"/>
-                </ItemsPanelTemplate>
-            </ListBox.ItemsPanel>
-        </ListView>
-            
+                      ItemsSource="{Binding Songs}"
+                      SelectedItem="{Binding ActiveSong}"
+                      ItemTemplate="{StaticResource SongItemTemplate}"
+                      ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel VerticalAlignment="Top"/>
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+            </ListView>
+
         </Grid>
     </DockPanel>
 </Window>

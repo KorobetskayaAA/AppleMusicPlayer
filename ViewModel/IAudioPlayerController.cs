@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Windows.Media;
+using System.Windows;
 
 namespace AppleMusicPlayer
 {
@@ -22,9 +22,8 @@ namespace AppleMusicPlayer
         double Volume { get; set; }
         double Balance { get; set; }
 
-        void Open(string fileName);
         event EventHandler MediaOpened;
-        event EventHandler<ExceptionEventArgs> MediaFailed;
+        event EventHandler<ExceptionRoutedEventArgs> MediaFailed;
 
         TimeSpan Interval { get; set; }
     }

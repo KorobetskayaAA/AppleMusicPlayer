@@ -29,19 +29,20 @@ namespace AppleMusicPlayer
         {
             DataContext = SongListFabric.LoadFromRss("appletop25.xml");
 
-            audioPlayerController = new DefaultAudioPlayerController();
-            audioPlayerController.MediaFailed += MediaPlayer_MediaFailed;
-            audioPlayerController.MediaOpened += MediaPlayer_Updated;
-            audioPlayerController.MediaEnded += MediaPlayer_Updated;
-
             dialogService = new DefaultDialogService();
 
             InitializeComponent();
 
+            audioPlayerController = new DefaultAudioPlayerController(myMediaElement);
+
+            audioPlayerController.MediaFailed += MediaPlayer_MediaFailed;
+            audioPlayerController.MediaOpened += MediaPlayer_Updated;
+            audioPlayerController.MediaEnded += MediaPlayer_Updated;
+
             PlayerControlPanel.DataContext = audioPlayerController;
         }
 
-        private void MediaPlayer_MediaFailed(object sender, ExceptionEventArgs e)
+        private void MediaPlayer_MediaFailed(object sender, ExceptionRoutedEventArgs e)
         {
             dialogService.ShowMessage("Ошибка! Не удалось открыть файл!");
             CommandManager.InvalidateRequerySuggested();
@@ -52,42 +53,34 @@ namespace AppleMusicPlayer
             CommandManager.InvalidateRequerySuggested();
         }
 
-        private void OpenAudioFile_Execute(object target, ExecutedRoutedEventArgs e)
-        {
-            if (dialogService.OpenFileDialog())
-            {
-                audioPlayerController.Open(dialogService.FileName);
-            }
-        }
-
         void Play_Execute(object target, ExecutedRoutedEventArgs e)
         {
-            audioPlayerController.Play();
+            audioPlayerController?.Play();
         }
 
         void Play_CanExecute(object sender, CanExecuteRoutedEventArgs e)
         {
-            e.CanExecute = audioPlayerController.CanPlay;
+            e.CanExecute = audioPlayerController?.CanPlay ?? false;
         }
 
         void Pause_Execute(object target, ExecutedRoutedEventArgs e)
         {
-            audioPlayerController.Pause();
+            audioPlayerController?.Pause();
         }
 
         void Pause_CanExecute(object sender, CanExecuteRoutedEventArgs e)
         {
-            e.CanExecute = audioPlayerController.CanPause;
+            e.CanExecute = audioPlayerController?.CanPause ?? false;
         }
 
         void Stop_Execute(object target, ExecutedRoutedEventArgs e)
         {
-            audioPlayerController.Stop();
+            audioPlayerController?.Stop();
         }
 
         void Stop_CanExecute(object sender, CanExecuteRoutedEventArgs e)
         {
-            e.CanExecute = audioPlayerController.CanStop;
+            e.CanExecute = audioPlayerController?.CanStop ?? false;
         }
 
         void Close_Execute(object target, ExecutedRoutedEventArgs e)

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Text;
+using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Threading;
 
@@ -11,13 +13,13 @@ namespace AppleMusicPlayer
 
     class DefaultAudioPlayerController : IAudioPlayerController, INotifyPropertyChanged
     {
-        readonly MediaPlayer mediaPlayer;
+        readonly MediaElement mediaElement;
         readonly DispatcherTimer timer;
         private PlayingState playingState = PlayingState.Stopped;
 
         public event EventHandler MediaEnded;
         public event EventHandler MediaOpened;
-        public event EventHandler<ExceptionEventArgs> MediaFailed;
+        public event EventHandler<ExceptionRoutedEventArgs> MediaFailed;
         public event PropertyChangedEventHandler PropertyChanged;
 
         void OnPropertyChanged([CallerMemberName]string propertyName = null)
@@ -25,8 +27,8 @@ namespace AppleMusicPlayer
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        public PlayingState PlayingState 
-        { 
+        public PlayingState PlayingState
+        {
             get => playingState;
             private set
             {
@@ -39,13 +41,13 @@ namespace AppleMusicPlayer
             }
         }
 
-        public bool HasMediaSource => mediaPlayer.Source != null;
+        public bool HasMediaSource => mediaElement.Source != null;
         public bool CanPlay => HasMediaSource && PlayingState != PlayingState.Playing;
         public bool CanPause => HasMediaSource && PlayingState == PlayingState.Playing;
         public bool CanStop => HasMediaSource && PlayingState != PlayingState.Stopped;
 
-        public TimeSpan Interval 
-        { 
+        public TimeSpan Interval
+        {
             get => timer.Interval;
             set
             {
@@ -54,50 +56,50 @@ namespace AppleMusicPlayer
                 OnPropertyChanged();
             }
         }
-        public TimeSpan Position 
-        { 
-            get => mediaPlayer.Position;
+        public TimeSpan Position
+        {
+            get => mediaElement.Position;
             set
             {
-                if (mediaPlayer.Position == value) return;
-                mediaPlayer.Position = value;
+                if (mediaElement.Position == value) return;
+                mediaElement.Position = value;
                 OnPropertyChanged();
             }
         }
         public TimeSpan Duration
         {
-            get => mediaPlayer.NaturalDuration.HasTimeSpan
-                ? mediaPlayer.NaturalDuration.TimeSpan
+            get => mediaElement.NaturalDuration.HasTimeSpan
+                ? mediaElement.NaturalDuration.TimeSpan
                 : TimeSpan.FromMilliseconds(0);
         }
 
-        public double Volume 
-        { 
-            get => mediaPlayer.Volume;
+        public double Volume
+        {
+            get => mediaElement.Volume;
             set
             {
-                if (mediaPlayer.Volume == value) return;
-                mediaPlayer.Volume = value;
+                if (mediaElement.Volume == value) return;
+                mediaElement.Volume = value;
                 OnPropertyChanged();
             }
         }
-        public double Balance 
-        { 
-            get => mediaPlayer.Balance;
+        public double Balance
+        {
+            get => mediaElement.Balance;
             set
             {
-                if (mediaPlayer.Balance == value) return;
-                mediaPlayer.Balance = value;
+                if (mediaElement.Balance == value) return;
+                mediaElement.Balance = value;
                 OnPropertyChanged();
             }
         }
 
-        public DefaultAudioPlayerController()
+        public DefaultAudioPlayerController(MediaElement mediaElement)
         {
-            mediaPlayer = new MediaPlayer();
-            mediaPlayer.MediaOpened += MediaPlayer_MediaOpened;
-            mediaPlayer.MediaFailed += MediaPlayer_MediaFailed;
-            mediaPlayer.MediaEnded += MediaPlayer_MediaEnded;
+            this.mediaElement = mediaElement;
+            this.mediaElement.MediaOpened += MediaPlayer_MediaOpened;
+            this.mediaElement.MediaFailed += MediaPlayer_MediaFailed;
+            this.mediaElement.MediaEnded += MediaPlayer_MediaEnded;
 
             timer = new DispatcherTimer();
             timer.Interval = TimeSpan.FromSeconds(1);
@@ -117,7 +119,7 @@ namespace AppleMusicPlayer
             MediaEnded?.Invoke(sender, e);
         }
 
-        private void MediaPlayer_MediaFailed(object sender, ExceptionEventArgs e)
+        private void MediaPlayer_MediaFailed(object sender, ExceptionRoutedEventArgs e)
         {
             PlayingState = PlayingState.Stopped;
             timer.Stop();
@@ -135,7 +137,7 @@ namespace AppleMusicPlayer
 
         public void Play()
         {
-            mediaPlayer.Play();
+            mediaElement.Play();
             timer.Start();
             OnPropertyChanged(nameof(Position));
             PlayingState = PlayingState.Playing;
@@ -143,7 +145,7 @@ namespace AppleMusicPlayer
 
         public void Pause()
         {
-            mediaPlayer.Pause();
+            mediaElement.Pause();
             timer.Stop();
             OnPropertyChanged(nameof(Position));
             PlayingState = PlayingState.Paused;
@@ -151,15 +153,10 @@ namespace AppleMusicPlayer
 
         public void Stop()
         {
-            mediaPlayer.Stop();
+            mediaElement.Stop();
             timer.Stop();
             OnPropertyChanged(nameof(Position));
             PlayingState = PlayingState.Stopped;
-        }
-
-        public void Open(string uri)
-        {
-            mediaPlayer.Open(new Uri(uri));
         }
     }
 }
