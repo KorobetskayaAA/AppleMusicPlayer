@@ -4,11 +4,25 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AppleMusicPlayer"
+        xmlns:sys="clr-namespace:System;assembly=System.Runtime"
         mc:Ignorable="d"
         Title="Apple Top Songs Player" Height="350" Width="600" MinWidth="300">
     <Window.Resources>
         <local:MediaPositionToStringConverter x:Key="MediaPositionToStringConverter"/>
         <local:TimeSpanToSecondsConverter x:Key="TimeSpanToSecondsConverter"/>
+        <Style TargetType="ListViewItem">
+            <Setter Property="VerticalAlignment" Value="Top"/>
+        </Style>
+        <sys:Double x:Key="SongItemWidth">120</sys:Double>
+        <DataTemplate x:Key="SongItemTemplate">
+            <StackPanel Margin="2" Width="{StaticResource SongItemWidth}">
+                <Image Source="{Binding Image}" Height="60" />
+                <TextBlock Text="{Binding Artist}" ToolTip="Исполнитель"
+                           FontSize="12" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center"/>
+                <TextBlock Text="{Binding Name}" ToolTip="Название"
+                           FontSize="13" TextWrapping="WrapWithOverflow" TextAlignment="Center" />
+            </StackPanel>
+        </DataTemplate>
     </Window.Resources>
     <Window.CommandBindings>
         <CommandBinding Command="ApplicationCommands.Open" Executed="OpenAudioFile_Execute"/>
@@ -23,9 +37,9 @@
 
     <DockPanel>
         <Menu DockPanel.Dock="Top">
-            <MenuItem Header="Ф_айл">
-                <MenuItem Header="_Открыть" Command="Open" />
-                <MenuItem Header="_Сохранить" Command="Save" />
+            <MenuItem Header="Файл">
+                <MenuItem Header="Открыть" Command="Open" />
+                <MenuItem Header="Сохранить" Command="Save" />
                 <Separator />
                 <MenuItem Header="Выход" Command="Close" />
             </MenuItem>
@@ -35,47 +49,88 @@
                 <MenuItem Header="Остановить" Command="MediaCommands.Stop" />
             </MenuItem>
         </Menu>
-        <Grid Grid.Row="1" DockPanel.Dock="Bottom" 
-              x:Name="PlayerControlPanel"
-              Height="Auto" Margin="5">
+        <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" MinWidth="50pt"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition/>
-                <RowDefinition/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-            <TextBlock Grid.Row="0" Grid.Column="0" VerticalAlignment="Center">
-                <TextBlock.Text>
-                    <MultiBinding 
+
+            <Grid Grid.Row="0" Grid.Column="0" DataContext="{Binding ActiveSong}">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Image Grid.Row="0" Source="{Binding Image}"/>
+                <TextBlock Grid.Row="1" Text="{Binding Artist}"
+                           HorizontalAlignment="Center" FontSize="15" FontWeight="Bold"
+                           TextWrapping="Wrap"/>
+                <TextBlock Grid.Row="2" Text="{Binding Name}"
+                           HorizontalAlignment="Center" FontSize="17"
+                           TextWrapping="Wrap"/>
+            </Grid>
+
+            <Grid Grid.Row="1" Grid.Column="0"
+              x:Name="PlayerControlPanel"
+              Height="Auto" Margin="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" MinWidth="50pt"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Grid.Column="0" VerticalAlignment="Center">
+                    <TextBlock.Text>
+                        <MultiBinding 
                         Converter="{StaticResource MediaPositionToStringConverter}">
-                        <Binding Path="Position" TargetNullValue="0"/>
-                        <Binding Path="Duration" TargetNullValue="0"/>
-                    </MultiBinding>
-                </TextBlock.Text>
-            </TextBlock>
-            <Slider Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="4"
+                            <Binding Path="Position" TargetNullValue="0"/>
+                            <Binding Path="Duration" TargetNullValue="0"/>
+                        </MultiBinding>
+                    </TextBlock.Text>
+                </TextBlock>
+                <Slider Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="4"
                     IsMoveToPointEnabled="True" SmallChange="1" LargeChange="5"
                     Minimum="0" 
                     Maximum="{Binding Duration, Converter={StaticResource TimeSpanToSecondsConverter}, TargetNullValue=1}" 
                     Value="{Binding Position, Converter={StaticResource TimeSpanToSecondsConverter}, TargetNullValue=0}" />
-            <Button Grid.Row="1" Grid.Column="0" Command="MediaCommands.Play">Играть</Button>
-            <Button Grid.Row="1" Grid.Column="1" Command="MediaCommands.Pause">Пауза</Button>
-            <Button Grid.Row="1" Grid.Column="2" Command="MediaCommands.Stop">Стоп</Button>
-            <Slider Grid.Row="1" Grid.Column="3"
+                <Button Grid.Row="1" Grid.Column="0" Command="MediaCommands.Play">Играть</Button>
+                <Button Grid.Row="1" Grid.Column="1" Command="MediaCommands.Pause">Пауза</Button>
+                <Button Grid.Row="1" Grid.Column="2" Command="MediaCommands.Stop">Стоп</Button>
+                <Slider Grid.Row="1" Grid.Column="3"
                     Minimum="0" Maximum="1" Value="{Binding Volume}" 
                     ToolTip="Громкость"
                     TickPlacement="BottomRight" TickFrequency="0.1" SmallChange="0.01" LargeChange="0" />
-            <Slider Grid.Row="1" Grid.Column="4"
+                <Slider Grid.Row="1" Grid.Column="4"
                     Minimum="-1" Maximum="1" Value="{Binding Balance}" 
                     ToolTip="Баланс"
                     LargeChange="0.5" TickPlacement="BottomRight" TickFrequency="0.5" />
+            </Grid>
+
+            <GridSplitter Width="3" Grid.Column="1" Grid.RowSpan="2" 
+                  HorizontalAlignment="Center" VerticalAlignment="Stretch"/>
+
+            <ListView x:Name="PlayList" Grid.Column="2" Grid.RowSpan="2" MinWidth="{StaticResource SongItemWidth}"
+                  ItemsSource="{Binding Songs}"
+                  SelectedItem="{Binding ActiveSong}"
+                  ItemTemplate="{StaticResource SongItemTemplate}"
+                  ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel VerticalAlignment="Top"/>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+        </ListView>
+            
         </Grid>
-        <ListView x:Name="PlayList" Grid.Row="0" DockPanel.Dock="Right"></ListView>
-        <Grid></Grid>
     </DockPanel>
 </Window>
