@@ -6,7 +6,7 @@ namespace AppleMusicPlayer
     {
         void ShowMessage(string message);
         string FileName { get; set; }
-        bool OpenFileDialog();
-        bool SaveFileDialog();
+        bool OpenFileDialog(string filter = "");
+        bool SaveFileDialog(string filter = "");
     }
 }

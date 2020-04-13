@@ -8,9 +8,11 @@ namespace AppleMusicPlayer
     {
         public string FileName { get; set; }
 
-        public bool OpenFileDialog()
+        public bool OpenFileDialog(string filter = "")
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.InitialDirectory = System.AppDomain.CurrentDomain.BaseDirectory;
+            openFileDialog.Filter = filter;
             if (openFileDialog.ShowDialog() == true)
             {
                 FileName = openFileDialog.FileName;
@@ -19,9 +21,11 @@ namespace AppleMusicPlayer
             return false;
         }
 
-        public bool SaveFileDialog()
+        public bool SaveFileDialog(string filter = "")
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.InitialDirectory = System.AppDomain.CurrentDomain.BaseDirectory;
+            saveFileDialog.Filter = filter;
             if (saveFileDialog.ShowDialog() == true)
             {
                 FileName = saveFileDialog.FileName;
