@@ -25,9 +25,11 @@ namespace AppleMusicPlayer
         IDialogService dialogService;
         IAudioPlayerController audioPlayerController;
 
+        const string AppleRssUri = "http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topsongs/limit=25/xml";
+
         public MainWindow()
         {
-            DataContext = SongListFabric.LoadFromRss("appletop25.xml");
+            DataContext = SongListFabric.LoadFromRss(AppleRssUri);
 
             dialogService = new DefaultDialogService();
 
@@ -86,6 +88,14 @@ namespace AppleMusicPlayer
         void Close_Execute(object target, ExecutedRoutedEventArgs e)
         {
             Close();
+        }
+
+        private void Open_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            if (dialogService.OpenFileDialog("XML-файлы (*.xml)|*.xml|Все файлы (*.*)|*.*"))
+            {
+                DataContext = SongListFabric.LoadFromRss(dialogService.FileName);
+            }
         }
     }
 }
