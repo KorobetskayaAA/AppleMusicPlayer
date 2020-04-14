@@ -1,5 +1,5 @@
 # AppleMusicPlayer
 
-Приложение осуществляет загрузку Top Songs из (Apple Rss)[https://www.apple.com/rss/]
+Приложение осуществляет загрузку Top Songs из [Apple Rss](https://www.apple.com/rss/)
 
 Выводится список композиций с указанием изображения альбома, исполнителя и названия. Доступен проигрыватель preview.
