@@ -129,8 +129,7 @@
                     LargeChange="0.5" TickPlacement="BottomRight" TickFrequency="0.5" Grid.ColumnSpan="2" />
             </Grid>
 
-            <GridSplitter Width="3" Grid.Column="1" Grid.RowSpan="2" 
-                  HorizontalAlignment="Center" VerticalAlignment="Stretch"/>
+            <GridSplitter Grid.Column="1" Grid.RowSpan="2" />
 
             <ListView x:Name="PlayList" Grid.Column="2" Grid.RowSpan="2"
                       MinWidth="{StaticResource SongItemWidth}"
