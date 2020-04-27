@@ -14,7 +14,8 @@ namespace AppleMusicPlayer
         public string Image { get; }
         public string Link { get; }
 
-        public Song(string name, string artist, string category, string image, string link)
+        public Song(string name, string artist, 
+            string category, string image, string link)
         {
             Name = name;
             Artist = artist;

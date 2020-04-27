@@ -9,7 +9,7 @@ namespace AppleMusicPlayer
 {
     public class SongList : INotifyPropertyChanged
     {
-        public Song activeSong;
+        private Song activeSong;
 
         public ObservableCollection<Song> Songs { get; }
         public Song ActiveSong 

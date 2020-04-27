@@ -66,12 +66,8 @@ namespace AppleMusicPlayer
                 OnPropertyChanged();
             }
         }
-        public TimeSpan Duration
-        {
-            get => mediaElement.NaturalDuration.HasTimeSpan
-                ? mediaElement.NaturalDuration.TimeSpan
-                : TimeSpan.FromMilliseconds(0);
-        }
+        public TimeSpan Duration => mediaElement.NaturalDuration.HasTimeSpan
+                ? mediaElement.NaturalDuration.TimeSpan : TimeSpan.FromMilliseconds(0);
 
         public double Volume
         {

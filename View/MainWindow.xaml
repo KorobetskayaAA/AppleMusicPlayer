@@ -105,15 +105,28 @@
                     Minimum="0" 
                     Maximum="{Binding Duration, Converter={StaticResource TimeSpanToSecondsConverter}, TargetNullValue=1}" 
                     Value="{Binding Position, Converter={StaticResource TimeSpanToSecondsConverter}, TargetNullValue=0}" />
-                <Button Grid.Row="1" Grid.Column="0" Command="MediaCommands.Play">Играть</Button>
-                <Button Grid.Row="1" Grid.Column="1" Command="MediaCommands.Pause">Пауза</Button>
-                <Button Grid.Row="1" Grid.Column="2" Command="MediaCommands.Stop">Стоп</Button>
-                <TextBlock  Grid.Row="1" Grid.Column="3" FontSize="9" Text="0" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
-                <TextBlock  Grid.Row="1" Grid.Column="3" FontSize="9" Text="100" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
-                <Slider Grid.Row="1" Grid.Column="3" Margin="0,0,0,5"
-                    Minimum="0" Maximum="1" Value="{Binding Volume}" 
-                    ToolTip="Громкость"
-                    TickPlacement="BottomRight" TickFrequency="0.1" SmallChange="0.01" LargeChange="0" />
+                <Button Grid.Row="1" Grid.Column="0" Command="MediaCommands.Play" ToolTip="Играть">
+                    <Path Stretch="Uniform" Fill="Black" Data="{StaticResource PlayIcon}" />
+                </Button>
+                <Button Grid.Row="1" Grid.Column="1" Command="MediaCommands.Pause" ToolTip="Пауза" >
+                    <Path Stretch="Uniform" Fill="Black" Data="{StaticResource PauseIcon}"/>
+                </Button>
+                <Button Grid.Row="1" Grid.Column="2" Command="MediaCommands.Stop" ToolTip="Стоп">
+                    <Path Stretch="Uniform" Fill="Black" Data="{StaticResource StopIcon}" />
+                </Button>
+                <Grid Grid.Row="1" Grid.Column="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Path Stretch="Uniform" Fill="Black" Data="{StaticResource VolumeIcon}" ToolTip="Стоп" Margin="5"/>
+                    <TextBlock Grid.Column="1" FontSize="9" Text="0" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                    <TextBlock Grid.Column="1" FontSize="9" Text="100" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+                    <Slider Grid.Column="1" Margin="0,0,0,5"
+                        Minimum="0" Maximum="1" Value="{Binding Volume}" 
+                        ToolTip="Громкость"
+                        TickPlacement="BottomRight" TickFrequency="0.1" SmallChange="0.01" LargeChange="0" />
+                </Grid>
                 <TextBlock  Grid.Row="1" Grid.Column="4" FontSize="9" Text="Л" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
                 <TextBlock  Grid.Row="1" Grid.Column="4" FontSize="9" Text="П" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
                 <Slider Grid.Row="1" Grid.Column="4" Margin="0,0,0,5"
@@ -125,7 +138,8 @@
             <GridSplitter Width="3" Grid.Column="1" Grid.RowSpan="2" 
                   HorizontalAlignment="Center" VerticalAlignment="Stretch"/>
 
-            <ListView x:Name="PlayList" Grid.Column="2" Grid.RowSpan="2" MinWidth="{StaticResource SongItemWidth}"
+            <ListView x:Name="PlayList" Grid.Column="2" Grid.RowSpan="2"
+                      MinWidth="{StaticResource SongItemWidth}"
                       ItemsSource="{Binding Songs}"
                       SelectedItem="{Binding ActiveSong}"
                       ItemTemplate="{StaticResource SongItemTemplate}"
