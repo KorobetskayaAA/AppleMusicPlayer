@@ -7,7 +7,6 @@
     </ResourceDictionary.MergedDictionaries>
 
     <sys:Double x:Key="SongItemHeight">60</sys:Double>
-    <sys:Double x:Key="SongItemWidth">120</sys:Double>
 
     <Style TargetType="Window">
         <Setter Property="Background" Value="{StaticResource NormalBackgroundBrush}"/>
@@ -109,8 +108,10 @@
     
     <Style TargetType="ListViewItem">
         <Setter Property="VerticalAlignment" Value="Top"/>
+        <Setter Property="HorizontalAlignment" Value="Stretch"/>
         <Setter Property="Margin" Value="2"/>
         <Setter Property="Padding" Value="0"/>
+        <Setter Property="Height" Value="{StaticResource SongItemHeight}"/>
         <Setter Property="Template">
             <Setter.Value>
                 <!-- Trun off default selection-->
@@ -118,9 +119,7 @@
                     <Border Background="{TemplateBinding Background}" 
                             BorderBrush="Transparent"
                             Padding="{TemplateBinding Padding}" >
-                        <ContentPresenter 
-                            HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
-                            VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        <ContentPresenter />
                     </Border>
                 </ControlTemplate>
             </Setter.Value>
@@ -128,14 +127,27 @@
     </Style>
 
     <DataTemplate x:Key="SongItemTemplate">
-        <StackPanel x:Name="DataPanel"
-                    Margin="0" Width="{StaticResource SongItemWidth}">
-            <Image Source="{Binding Image}" Height="{StaticResource SongItemHeight}" />
-            <TextBlock Text="{Binding Artist}" ToolTip="Исполнитель"
-                       FontSize="12" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center"/>
-            <TextBlock Text="{Binding Name}" ToolTip="Название"
-                       FontSize="13" TextWrapping="WrapWithOverflow" TextAlignment="Center" />
-        </StackPanel>
+        <Grid x:Name="DataPanel" Margin="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Image Grid.Column="0" Grid.RowSpan="2"
+                   Margin="2"
+                   Source="{Binding Image}" VerticalAlignment="Stretch" />
+            <TextBlock Grid.Column="1" Grid.Row="0"
+                       Text="{Binding Artist}" ToolTip="Исполнитель"
+                       Margin="2"
+                       FontSize="12" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Left"/>
+            <TextBlock Grid.Column="1" Grid.Row="1"
+                       Text="{Binding Name}" ToolTip="Название"
+                       Margin="2"
+                       FontSize="13" TextWrapping="WrapWithOverflow" TextAlignment="Left" />
+        </Grid>
         <DataTemplate.Triggers>
             <DataTrigger Binding="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type ListViewItem}},Path=IsSelected}" Value="True" >
                 <Setter TargetName="DataPanel" Property="Background" Value="{StaticResource ActiveBackgroundBrush}" />
