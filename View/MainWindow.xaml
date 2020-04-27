@@ -36,7 +36,7 @@
         </Menu>
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
+                <ColumnDefinition MinWidth="180"/>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
@@ -52,7 +52,7 @@
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
-                <Image Grid.Row="0" Source="{Binding Image}"/>
+                <Image Grid.Row="0" Source="{Binding Image}" Margin="5"/>
                 <TextBlock Grid.Row="1" Text="{Binding Artist}"
                            HorizontalAlignment="Center" FontSize="15" FontWeight="Bold"
                            TextWrapping="Wrap"/>
@@ -66,67 +66,76 @@
             <Grid Grid.Row="1" Grid.Column="0"
                   x:Name="PlayerControlPanel"
                   Height="Auto" Margin="5">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="2*"/>
-                    <ColumnDefinition Width="2*" />
-                    <ColumnDefinition Width="2*" />
-                    <ColumnDefinition Width="3*" />
-                    <ColumnDefinition Width="2*" />
-                </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <TextBlock Grid.Column="0" VerticalAlignment="Center">
-                    <TextBlock.Text>
-                        <MultiBinding 
-                        Converter="{StaticResource MediaPositionToStringConverter}">
-                            <Binding Path="Position" TargetNullValue="0"/>
-                            <Binding Path="Duration" TargetNullValue="0"/>
-                        </MultiBinding>
-                    </TextBlock.Text>
-                </TextBlock>
-                <Slider Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="4"
-                    IsMoveToPointEnabled="True" SmallChange="1" LargeChange="5"
-                    Minimum="0" 
-                    Maximum="{Binding Duration, Converter={StaticResource TimeSpanToSecondsConverter}, TargetNullValue=1}" 
-                    Value="{Binding Position, Converter={StaticResource TimeSpanToSecondsConverter}, TargetNullValue=0}" />
-                <Button Grid.Row="1" Grid.Column="0" Command="MediaCommands.Play" ToolTip="Играть">
-                    <Path Stretch="Uniform" 
-                          Fill="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=Button}, Path=Foreground}" 
-                          Data="{StaticResource PlayIcon}" />
-                </Button>
-                <Button Grid.Row="1" Grid.Column="1" Command="MediaCommands.Pause" ToolTip="Пауза" >
-                    <Path Stretch="Uniform" 
-                          Fill="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=Button}, Path=Foreground}" 
-                          Data="{StaticResource PauseIcon}"/>
-                </Button>
-                <Button Grid.Row="1" Grid.Column="2" Command="MediaCommands.Stop" ToolTip="Стоп">
-                    <Path Stretch="Uniform"
-                          Fill="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=Button}, Path=Foreground}" 
-                          Data="{StaticResource StopIcon}" />
-                </Button>
-                <Grid Grid.Row="1" Grid.Column="3" ToolTip="Громкость">
+                <Grid Grid.Row="0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition/>
+                        <ColumnDefinition />
                     </Grid.ColumnDefinitions>
-                    <Path Stretch="Uniform"
-                          Fill="{StaticResource NormalForegroundBrush}" 
-                          Data="{StaticResource VolumeIcon}" 
-                          Margin="3"/>
-                    <Slider Grid.Column="1" Margin="0,0,0,5"
-                        Minimum="0" Maximum="1" Value="{Binding Volume}" 
-                        TickPlacement="BottomRight" TickFrequency="0.1" SmallChange="0.01" LargeChange="0" />
-                    <TextBlock Grid.Column="1" FontSize="9" Text="0" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
-                    <TextBlock Grid.Column="1" FontSize="9" Text="100" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+                    <TextBlock VerticalAlignment="Center" Margin="2">
+                        <TextBlock.Text>
+                            <MultiBinding Converter="{StaticResource MediaPositionToStringConverter}">
+                                <Binding Path="Position" TargetNullValue="0"/>
+                                <Binding Path="Duration" TargetNullValue="0"/>
+                            </MultiBinding>
+                        </TextBlock.Text>
+                    </TextBlock>
+                    <Slider Grid.Row="0" Grid.Column="1"
+                        IsMoveToPointEnabled="True" SmallChange="1" LargeChange="5"
+                        Minimum="0" 
+                        Maximum="{Binding Duration, Converter={StaticResource TimeSpanToSecondsConverter}, TargetNullValue=1}" 
+                        Value="{Binding Position, Converter={StaticResource TimeSpanToSecondsConverter}, TargetNullValue=0}" />
                 </Grid>
-                <TextBlock  Grid.Row="1" Grid.Column="4" FontSize="9" Text="Л" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
-                <TextBlock  Grid.Row="1" Grid.Column="4" FontSize="9" Text="П" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
-                <Slider Grid.Row="1" Grid.Column="4" Margin="0,0,0,5"
-                    Minimum="-1" Maximum="1" Value="{Binding Balance}" 
-                    ToolTip="Баланс"
-                    LargeChange="0.5" TickPlacement="BottomRight" TickFrequency="0.5" Grid.ColumnSpan="2" />
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="5*" MinWidth="50" />
+                        <ColumnDefinition Width="3*" MinWidth="20" />
+                    </Grid.ColumnDefinitions>
+                    <Button Command="MediaCommands.Play" ToolTip="Играть">
+                        <Path Stretch="Uniform" 
+                              Fill="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=Button}, Path=Foreground}" 
+                              Data="{StaticResource PlayIcon}" />
+                    </Button>
+                    <Button Grid.Column="1" Command="MediaCommands.Pause" ToolTip="Пауза" >
+                        <Path Stretch="Uniform" 
+                              Fill="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=Button}, Path=Foreground}" 
+                              Data="{StaticResource PauseIcon}"/>
+                    </Button>
+                    <Button Grid.Column="2" Command="MediaCommands.Stop" ToolTip="Стоп">
+                        <Path Stretch="Uniform"
+                              Fill="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=Button}, Path=Foreground}" 
+                              Data="{StaticResource StopIcon}" />
+                    </Button>
+                    <Grid Grid.Column="3" ToolTip="Громкость" Margin="2,3,2,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Path Stretch="Uniform"
+                              Fill="{StaticResource NormalForegroundBrush}" 
+                              Data="{StaticResource VolumeIcon}" 
+                              Margin="0,0,5,0"/>
+                        <Slider Grid.Column="1" Margin="0,0,0,9"
+                            Minimum="0" Maximum="1" Value="{Binding Volume}" 
+                            TickPlacement="BottomRight" TickFrequency="0.1" SmallChange="0.01" LargeChange="0" />
+                        <TextBlock Grid.Column="1" FontSize="8" Text=" 0 " HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                        <TextBlock Grid.Column="1" FontSize="8" Text="100" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+                    </Grid>
+                    <Grid Grid.Column="4" Margin="2,3,2,0">
+                        <Slider Margin="0,0,0,9"
+                            Minimum="-1" Maximum="1" Value="{Binding Balance}" 
+                            ToolTip="Баланс"
+                            LargeChange="0.5" TickPlacement="BottomRight" TickFrequency="0.5" Grid.ColumnSpan="2" />
+                        <TextBlock FontSize="9" Text="Л" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                        <TextBlock FontSize="9" Text="П" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+                    </Grid>
+                </Grid>
             </Grid>
 
             <GridSplitter Grid.Column="1" Grid.RowSpan="2" />

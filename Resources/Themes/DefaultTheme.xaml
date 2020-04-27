@@ -5,7 +5,7 @@
     <Color x:Key="BackgroundColor">#223</Color>
     <Color x:Key="ForegroundColor">#FFF</Color>
     <Color x:Key="BorderColor">#EEE</Color>
-    <Color x:Key="DisabledBackgroundColor">#C666</Color>
+    <Color x:Key="DisabledBackgroundColor">#8333</Color>
     <Color x:Key="PressedBackgroundColor">#001</Color>
     <Color x:Key="ActiveBackgroundColor">#733</Color>
 
@@ -13,5 +13,6 @@
     <SolidColorBrush x:Key="NormalForegroundBrush" Color="{StaticResource ForegroundColor}"/>
     <SolidColorBrush x:Key="NormalBorderBrush" Color="{StaticResource BorderColor}"/>
     <SolidColorBrush x:Key="ActiveBackgroundBrush" Color="{StaticResource ActiveBackgroundColor}"/>
+    <SolidColorBrush x:Key="DisabledBackgroundBrush" Color="{StaticResource DisabledBackgroundColor}"/>
 
 </ResourceDictionary>
